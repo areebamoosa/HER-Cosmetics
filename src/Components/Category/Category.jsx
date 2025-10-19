@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
-import lips from '../../assets/lips.avif'
-import face from '../../assets/face.avif'
-import eyes from '../../assets/eyes.avif'
-import skin from '../../assets/skin.avif'
+import lips from '../../assets/ll.webp'
+import fragrance from '../../assets/ff.webp'
+import eyes from '../../assets/ee.webp'
+import skin from '../../assets/ss.webp'
 
 const Category = () => {
 
     const categories = [
         { img: lips, label: "LIPS" },
-        { img: face, label: "FACE" },
+        { img: fragrance, label: "FRAGRANCE" },
         { img: eyes, label: "EYES" },
         { img: skin, label: "SKIN" }
     ]
@@ -45,7 +45,7 @@ const Category = () => {
                 </div>
 
 
-                <div className='flex justify-center items-center gap-6 mt-10 mx-auto max-w-[1800px]'>
+                <div className='flex justify-center items-center gap-6 mt-15 mx-auto max-w-[1800px]'>
 
 
                     <div >
@@ -61,7 +61,7 @@ const Category = () => {
                                 <div key={index} className='w-[550px] h-[750px] relative flex-shrink-0'>
 
 
-                                    <img src={item.img} alt={item.label} className='w-[550px] h-[750px] object-cover rounded-xl  brightness-70' />
+                                    <img src={item.img} alt={item.label} className='w-[550px] h-[750px] object-cover rounded-xl  brightness-80' />
 
                                     <h2 className='absolute bottom-1/2 left-1/2 -translate-x-1/2 headFont font-semibold text-white text-3xl '> {item.label} </h2>
 
