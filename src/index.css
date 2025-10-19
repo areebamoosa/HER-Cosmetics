@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body{
+  background-color: #F8F1F4;
+}
+
 /* Custom Font Styles */
 
 .font{
@@ -13,4 +17,10 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 800;
     font-style: normal;
+}
+
+
+/* Custom Font Colours */
+.dark-pink{
+  color: #9B6D75;
 }
