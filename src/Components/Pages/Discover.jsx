@@ -1,7 +1,6 @@
 import React from 'react'
 import Nav from '../Navbar/Nav'
 import img from '../../assets/virtualtry.webp'
-import Footer from '../Footer/Footer'
 
 const Discover = () => {
     return (
@@ -45,8 +44,45 @@ const Discover = () => {
 
             </div>
 
-            <Footer />
+            {/* Customised Footer */}
 
+            <div className='mt-[50px] flex flex-col justify-center items-center m-10'>
+
+
+                <div className='text-3xl flex gap-10 mt-5 cursor-pointer'>
+
+                    <i className="fa-brands fa-facebook-f" style={{ color: "#986e75" }}></i>
+                    <i class="fa-brands fa-instagram" style={{ color: "#986e75" }}></i>
+                    <i class="fa-brands fa-x-twitter" style={{ color: "#986e75" }}></i>
+                    <i class="fa-brands fa-tiktok" style={{ color: "#986e75" }}></i>
+
+                </div>
+
+
+                <div className='flex gap-5 mt-20 text-lg grey font'>
+                    <p>contact us</p>
+                    <p>faq</p>
+                    <p>shipping</p>
+                    <p>order tracking</p>
+                    <p>rewards</p>
+                    <p>gift card balance</p>
+                </div>
+
+                <div className='flex gap-4 mt-15 text-base grey'>
+                    <p className='underline cursor-pointer'>privacy policy</p>
+                    <p className='underline cursor-pointer'>terms</p>
+                    <p className='underline cursor-pointer'>accessibility</p>
+                    <p className='underline cursor-pointer'>set my cookie choices</p>
+                    <p className='underline cursor-pointer'>cookie policy</p>
+                </div>
+
+
+                <div className='mt-8'>
+
+                    <p className='dark-pink font-medium font text-lg'>Developed with <i className="fa-regular fa-heart " style={{ color: "#986e75" }}></i> by A.M</p>
+                </div>
+
+            </div>
         </>
     )
 }

@@ -8,6 +8,8 @@ import Footer from './Components/Footer/Footer'
 import ProductUpcoming from './Components/Upcoming/Product'
 import Banner from './Components/Advertisement/Banner'
 import Discover from './Components/Pages/Discover'
+import Faqs from './Components/Pages/Faqs'
+
 
 function App() {
 
@@ -30,6 +32,7 @@ function App() {
         } />
 
         <Route path="/discover" element={<Discover />} />
+        <Route path="/faq" element={<Faqs/>}/>
       </Routes>
 
     </Router>

@@ -30,7 +30,7 @@ const Nav = () => {
                     <li>  <Link to="/"> fragrance</Link></li>
                     <li>  <Link to="/"> skin</Link></li>
                     <li>  <Link to="/discover"> discover</Link></li>
-                    <li>  <Link to="/">rewards </Link></li>
+                    <li>  <Link to="/faq">About Us </Link></li>
                 </ul>
             </div>
         </>
