@@ -5,6 +5,7 @@ import Category from './Components/Category/Category'
 import Product from './Components/Limited-Addition/Product'
 import Cosmic from './Components/Cosmic/Cosmic'
 import Footer from './Components/Footer/Footer'
+import ProductUpcoming from './Components/Upcoming/Product'
 
 function App() {
 
@@ -13,8 +14,8 @@ function App() {
       <Page />
       <Category />
       <Product />
-      {/* <Banner/> */}
       <Cosmic />
+      <ProductUpcoming/>
       <Footer />
 
     </>
