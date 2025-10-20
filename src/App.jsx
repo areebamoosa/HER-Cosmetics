@@ -6,6 +6,7 @@ import Product from './Components/Limited-Addition/Product'
 import Cosmic from './Components/Cosmic/Cosmic'
 import Footer from './Components/Footer/Footer'
 import ProductUpcoming from './Components/Upcoming/Product'
+import Banner from './Components/Advertisement/Banner'
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
       <Product />
       <Cosmic />
       <ProductUpcoming/>
+      <Banner/>
+
       <Footer />
 
     </>
