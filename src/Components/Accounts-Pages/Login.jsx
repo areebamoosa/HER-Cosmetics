@@ -34,7 +34,7 @@ const Login = () => {
                 </div>
 
 
-                <button className='w-120 h-10  p-2 border-1 rounded-sm border-black mt-8 cursor-pointer'>log in</button>
+                <button className='w-120 h-10  p-2 border-1 rounded-sm border-black mt-8 cursor-pointer grey'>log in</button>
 
                 <p className='mt-10 grey'>don't have an account yet?</p>
                 <p className='cursor-pointer underline grey'>create account</p>
