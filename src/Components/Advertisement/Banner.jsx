@@ -1,18 +1,19 @@
 import React from 'react'
 import Button from '../Button/Button'
+import Blogger from '../../assets/Blogger.mp4'
 
 const Banner = () => {
     return (
         <>
-            <div className='flex'>
+            <div className='flex justify-center items-center w-[2000px] h-[1000px] rounded-lg'>
 
-                <div>
-                    <video src=""></video>
+                <div className='w-[1000px] h-[1000px] overflow-hidden rounded-l-lg'>
+                    <video src={Blogger} autoPlay loop muted playsInline className='w-full h-full object-cover'></video>
                 </div>
 
                 <div>
 
-                    <div className='flex flex-col justify-center items-center'>
+                    <div className='flex flex-col justify-center items-center bg-white w-[1000px] h-[1000px] rounded-r-lg'>
 
                         <h1 className='headFont dark-pink text-4xl'>HER'S</h1>
                         <h1 className='headFont dark-pink text-4xl mt-1'>FAVE NEW LIP KITS</h1>

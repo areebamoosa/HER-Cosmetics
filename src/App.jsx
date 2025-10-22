@@ -11,6 +11,7 @@ import Discover from './Components/Pages/Discover'
 import Faqs from './Components/Pages/Faqs'
 import Login from './Components/Accounts-Pages/Login'
 import Create from './Components/Accounts-Pages/Create'
+import Bag from './Components/Bag/Bag'
 
 
 function App() {
@@ -25,10 +26,15 @@ function App() {
           <>
             <Page />
             <Category />
-            <Product />
             <Cosmic />
-            <ProductUpcoming />
+            <div className='m-20'>
             <Banner />
+            </div>
+            <Product />
+            <div className='m-20'>
+              <Bag/>
+            </div>
+            <ProductUpcoming />
             <Footer />
           </>
         } />
