@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '../Navbar/Nav'
 import Footer from '../Footer/Footer'
+import { Link } from 'react-router-dom'
 
 
 const Login = () => {
@@ -37,7 +38,7 @@ const Login = () => {
                 <button className='w-120 h-10  p-2 border-1 rounded-sm border-black mt-8 cursor-pointer grey'>log in</button>
 
                 <p className='mt-10 grey'>don't have an account yet?</p>
-                <p className='cursor-pointer underline grey'>create account</p>
+                <p className='cursor-pointer underline grey'><Link to="/create"> create account  </Link></p>
 
             </div>
 

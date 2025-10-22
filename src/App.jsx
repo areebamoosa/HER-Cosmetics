@@ -9,6 +9,8 @@ import ProductUpcoming from './Components/Upcoming/Product'
 import Banner from './Components/Advertisement/Banner'
 import Discover from './Components/Pages/Discover'
 import Faqs from './Components/Pages/Faqs'
+import Login from './Components/Accounts-Pages/Login'
+import Create from './Components/Accounts-Pages/Create'
 
 
 function App() {
@@ -32,7 +34,9 @@ function App() {
         } />
 
         <Route path="/discover" element={<Discover />} />
-        <Route path="/faq" element={<Faqs/>}/>
+        <Route path="/faq" element={<Faqs />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/create" element={<Create />} />
       </Routes>
 
     </Router>

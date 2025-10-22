@@ -26,9 +26,9 @@ const Page = () => {
                 <h1 className='headFont text-3xl ml-50'>HER COSMETICS</h1>
               </div>
 
-              <div className='text-white flex justify-center items-center gap-12 text-2xl mr-10'>
+              <div className='text-white flex justify-center items-center gap-12 text-2xl mr-10 cursor-pointer'>
                 <p><i className="fa-solid fa-heart"></i></p>
-                <p><i className="fa-solid fa-user"></i></p>
+                <p><Link to="/login"><i className="fa-solid fa-user"></i></Link></p>
                 <p><i className="fa-solid fa-magnifying-glass"></i></p>
                 <p><i className="fa-solid fa-bag-shopping"></i></p>
               </div>

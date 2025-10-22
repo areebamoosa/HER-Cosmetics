@@ -17,7 +17,7 @@ const Nav = () => {
 
                 <div className='text-black flex justify-center items-center gap-12 text-2xl mr-10'>
                     <p><i className="fa-solid fa-heart"></i></p>
-                    <p><i className="fa-solid fa-user"></i></p>
+                    <p><Link to="/login"><i className="fa-solid fa-user"></i></Link></p>
                     <p><i className="fa-solid fa-magnifying-glass"></i></p>
                     <p><i className="fa-solid fa-bag-shopping"></i></p>
                 </div>
