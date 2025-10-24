@@ -1,30 +1,25 @@
 import React from 'react'
 import Nav from '../Navbar/Nav'
 import img from '../../assets/virtualtry.webp'
-import Product from './Product'
+import AllProducts from './AllProducts'
+import Button from '../Button/Button'
+import Footer from '../Footer/Footer'
 
 const Page = () => {
     return (
         <>
             <Nav />
-
             <div className='mt-8  w-full h-[600px] overflow-hidden '>
                 <img src={img} alt="img" className=' w-full h-full object-cover' />
             </div>
-
-            {/* <div>
-                <div>
-                    <img src={img} alt="img" className='' />
-                </div>
-            </div> */}
-
-            <div className='m-20'>
-
-            <Product/>
+            <div className='m-10'>
+                <AllProducts />
             </div>
 
-
-
+            <div className='mt-10 flex justify-center items-center'>
+                <Button text={"load more"} />
+            </div>
+            <Footer />
         </>
     )
 }

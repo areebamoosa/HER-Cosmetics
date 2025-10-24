@@ -1,17 +1,10 @@
 import React from 'react'
-import main from '../../assets/prod.webp'
-import hovImg from '../../assets/hov.webp'
-import main1 from '../../assets/black.webp'
 import { useState } from 'react'
-import main2 from '../../assets/peach.webp'
 
-const Product = () => {
+const Product = ({ title, price, desc, Img, hoverImg, smallImgs }) => {
 
     // Main Img of each product
-    const [mainImg, setImg] = useState(main);
-
-    // Small images of products
-    const smallImgs = [main1, main2, main, main2]
+    const [mainImg, setImg] = useState(Img);
 
     return (
         <>
@@ -25,7 +18,7 @@ const Product = () => {
                     <img src={mainImg} alt="prod" className='absolute h-full w-full object-cover rounded-t-lg transition-opacity duration-200 hover:opacity-0' />
 
                     {/* Hover Image */}
-                    <img src={hovImg} alt="hovImg" className="absolute top-0 left-0 h-full w-full object-cover rounded-t-lg opacity-0 transition-opacity duration-200 hover:opacity-100 " />
+                    <img src={hoverImg} alt="hovImg" className="absolute top-0 left-0 h-full w-full object-cover rounded-t-lg opacity-0 transition-opacity duration-200 hover:opacity-100 " />
 
                 </div>
 
@@ -51,15 +44,11 @@ const Product = () => {
                     {/* Details of Product */}
 
                     <div className='flex  justify-between mt-1'>
-                        <span className=' font-semibold text-lg'>true brown k</span>
-                        <span className='font-semibold text-lg'>$36</span>
+                        <span className=' font-semibold text-lg'>{title}</span>
+                        <span className='font-semibold text-lg'>{price}</span>
                     </div>
-
-                    <p className='text-lg grey mt-[-2px] '>king kylie mattee lip kit</p>
-
+                    <p className='text-lg grey mt-[-2px] '>{desc}</p>
                 </div>
-
-
             </div >
 
         </>
