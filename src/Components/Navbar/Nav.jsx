@@ -26,7 +26,7 @@ const Nav = () => {
 
             <div className='text-black flex justify-center items-center mt-8 '>
                 <ul className='flex justify-center items-center gap-10 font cursor-pointer'>
-                    <li>  <Link to="/">cosmetics </Link></li>
+                <li>  <Link to="/cosmetic">cosmetics </Link></li>
                     <li>  <Link to="/"> fragrance</Link></li>
                     <li>  <Link to="/"> skin</Link></li>
                     <li>  <Link to="/discover"> discover</Link></li>

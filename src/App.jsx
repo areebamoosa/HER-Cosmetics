@@ -12,6 +12,7 @@ import Faqs from './Components/Pages/Faqs'
 import Login from './Components/Accounts-Pages/Login'
 import Create from './Components/Accounts-Pages/Create'
 import Bag from './Components/Bag/Bag'
+import Cosmetic from './Components/Cosmetics-Page/Page'
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           </>
         } />
 
+        <Route path="/cosmetic" element={<Cosmetic />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/faq" element={<Faqs />} />
         <Route path="/login" element={<Login />} />
