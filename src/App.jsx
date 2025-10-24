@@ -2,16 +2,16 @@ import './index.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Page from './Components/Hero-Page/Page'
 import Category from './Components/Category/Category'
-import Product from './Components/Limited-Addition/Product'
-import Cosmic from './Components/Cosmic/Cosmic'
+import Product from './Components/Banners/Product'
+import Cosmic from './Components/Banners/Cosmic'
 import Footer from './Components/Footer/Footer'
-import ProductUpcoming from './Components/Upcoming/Product'
-import Banner from './Components/Advertisement/Banner'
+import ProductUpcoming from './Components/Banners/Product'
+import Banner from './Components/Banners/Banner'
 import Discover from './Components/Discover-Page/Discover'
 import Faqs from './Components/AboutUs-Page/Faqs'
 import Login from './Components/Accounts-Pages/Login'
 import Create from './Components/Accounts-Pages/Create'
-import Bag from './Components/Bag/Bag'
+import Bag from './Components/Banners/Bag'
 import Cosmetic from './Components/Cosmetics-Page/Page'
 
 
@@ -28,13 +28,9 @@ function App() {
             <Page />
             <Category />
             <Cosmic />
-            <div className='m-20'>
             <Banner />
-            </div>
             <Product />
-            <div className='m-20'>
-              <Bag/>
-            </div>
+            <Bag />
             <ProductUpcoming />
             <Footer />
           </>

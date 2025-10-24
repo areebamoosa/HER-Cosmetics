@@ -1,9 +1,8 @@
 import React from 'react'
 import prod from '../../assets/lipsticks.webp'
-
 import Button from '../Button/Button'
 
-const Product = () => {
+const Lipsticks = () => {
     return (
         <>
             <div className='relative'>
@@ -38,4 +37,4 @@ const Product = () => {
     )
 }
 
-export default Product
+export default Lipsticks
