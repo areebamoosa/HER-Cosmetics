@@ -1,57 +1,69 @@
 import React from 'react'
-import prod from '../../assets/prod.webp'
+import main from '../../assets/prod.webp'
 import hovImg from '../../assets/hov.webp'
-import Button from '../Button/Button'
+import main1 from '../../assets/black.webp'
+import { useState } from 'react'
+import main2 from '../../assets/peach.webp'
 
 const Product = () => {
-  return (
-    <>
-    {/* Design Card of each Product */}
 
-    <div className='group h-[550px] w-[450px] bg-white rounded-lg transition-all duration-500 '>
+    // Main Img of each product
+    const [mainImg, setImg] = useState(main);
 
-        <div className='relative h-[450px] w-[450px] rounded-t-lg'>
+    // Small images of products
+    const smallImgs = [main1, main2, main, main2]
 
-        {/* Original Default Image */}
-        <img src={prod} alt="prod" className='absolute h-full w-full object-cover rounded-t-lg transition-opacity duration-200 group-hover:opacity-0' />
+    return (
+        <>
+            {/* Design Card of each Product */}
 
-        {/* Hover Image */}
-        <img src={hovImg} alt="hovImg" className="absolute top-0 left-0 h-full w-full object-cover rounded-t-lg opacity-0 transition-opacity duration-200 group-hover:opacity-100"/>
+            <div className='relative h-[560px] w-[420px] bg-white rounded-lg transition-all duration-500  group'>
 
-        </div>
+                <div className='relative h-[400px] w-[420px] rounded-t-lg '>
 
-        <div className='p-5 transition-all duration-500 group-hover:h-[180px] h-[130px] '>
+                    {/* Original Default Image */}
+                    <img src={mainImg} alt="prod" className='absolute h-full w-full object-cover rounded-t-lg transition-opacity duration-200 hover:opacity-0' />
 
-            <div className='flex gap-1'>
-            {/* Star Rating */}
-            <i class="fa-solid fa-star" style = {{color: "#cccccc"}}></i>
-            <i class="fa-solid fa-star" style = {{color: "#cccccc"}}></i>
-            <i class="fa-solid fa-star" style = {{color: "#cccccc"}}></i>
-            <i class="fa-solid fa-star" style = {{color: "#cccccc"}}></i>
-            <i class="fa-solid fa-star" style = {{color: "#cccccc"}}></i>
-            </div>
+                    {/* Hover Image */}
+                    <img src={hovImg} alt="hovImg" className="absolute top-0 left-0 h-full w-full object-cover rounded-t-lg opacity-0 transition-opacity duration-200 hover:opacity-100 " />
 
-
-                <div className='flex  justify-between mt-1'>
-                <span className=' font-semibold text-lg'>true brown k</span>
-                <span className='font-semibold text-lg'>$36</span>
                 </div>
 
-                <p className='text-lg grey mt-[-2px]'>king kylie mattee lip kit</p>
+                <div className='p-5 '>
+
+                    {/* Small Images row container */}
+
+                    <div className='flex gap-1 cursor-pointer '>
+                        {smallImgs.map((img, index) => (
+                            <img src={img} alt="img" key={index} onClick={() => setImg(img)} className={`w-[45px] h-[45px] object-cover  border  ${mainImg === img ? "border-black" : "border-gray-100"}`} />
+                        ))}
+                    </div>
+
+                    {/* Star Rating */}
+                    <div className='flex gap-1 mt-2'>
+                        <i class="fa-solid fa-star" style={{ color: "#cccccc" }}></i>
+                        <i class="fa-solid fa-star" style={{ color: "#cccccc" }}></i>
+                        <i class="fa-solid fa-star" style={{ color: "#cccccc" }}></i>
+                        <i class="fa-solid fa-star" style={{ color: "#cccccc" }}></i>
+                        <i class="fa-solid fa-star" style={{ color: "#cccccc" }}></i>
+                    </div>
+
+                    {/* Details of Product */}
+
+                    <div className='flex  justify-between mt-1'>
+                        <span className=' font-semibold text-lg'>true brown k</span>
+                        <span className='font-semibold text-lg'>$36</span>
+                    </div>
+
+                    <p className='text-lg grey mt-[-2px] '>king kylie mattee lip kit</p>
+
+                </div>
 
 
-                {/* Buttons — show only on hover */}
-               <div className=" opacity-0 group-hover:opacity-100  flex  transition-all duration-200  justify-center items-center">
-                <Button text={"add to cart"}  width = "w-[152px]" height = "h-10"/>
-               </div>
+            </div >
 
-            </div>
-
-
-        </div>
-
-    </>
-  )
+        </>
+    )
 }
 
 export default Product
