@@ -13,6 +13,7 @@ import Login from './Components/Accounts-Pages/Login'
 import Create from './Components/Accounts-Pages/Create'
 import Bag from './Components/Banners/Bag'
 import Cosmetic from './Components/Cosmetics-Page/Page'
+import ProductDetails from './Components/Cosmetics-Page/ProductDetails'
 
 
 function App() {
@@ -41,6 +42,12 @@ function App() {
         <Route path="/faq" element={<Faqs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/create" element={<Create />} />
+
+        {/* Route of each product's detailed page */}
+
+        <Route path="/product/:id" element={<ProductDetails/>} />
+
+
       </Routes>
 
     </Router>

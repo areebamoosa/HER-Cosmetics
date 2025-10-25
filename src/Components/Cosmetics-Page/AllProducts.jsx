@@ -4,8 +4,9 @@ import main from '../../assets/prod.webp'
 import hovImg from '../../assets/hov.webp'
 import black from '../../assets/black.webp'
 import peach from '../../assets/peach.webp'
+import { Link } from 'react-router-dom'
 
-const productsDetails = [
+export const productsDetails = [
   {
     id: 1,
     title: "True Brown K",
@@ -123,7 +124,9 @@ const AllProducts = () => {
     <>
       <div className='grid grid-cols-4 gap-10'>
         {productsDetails.map((prod, index) => (
-          <Product key={prod.id} {...prod} />
+          <Link to ={`/product/${prod.id}`} key={prod.id} >
+          <Product  {...prod} />
+          </Link>
         ))}
       </div>
     </>
