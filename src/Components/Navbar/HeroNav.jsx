@@ -27,7 +27,7 @@ const HeroNav = () => {
                         <ul className='flex justify-center items-center gap-10 font cursor-pointer'>
                             <li>  <Link to="/cosmetic" className=' hover:text-black hover:rounded-md hover:bg-white  transition-all duration-300  px-4 py-2 '>cosmetics </Link></li>
                             <li>  <Link to="/" className=' hover:text-black hover:rounded-md hover:bg-white  transition-all duration-300  px-4 py-2 '> fragrance</Link></li>
-                            <li>  <Link to="/" className=' hover:text-black hover:rounded-md hover:bg-white  transition-all duration-300  px-4 py-2 '> skin</Link></li>
+                            <li>  <Link to="/skin" className=' hover:text-black hover:rounded-md hover:bg-white  transition-all duration-300  px-4 py-2 '> skin</Link></li>
                             <li>  <Link to="/discover" className=' hover:text-black hover:rounded-md hover:bg-white  transition-all duration-300  px-4 py-2 '> discover</Link></li>
                             <li>  <Link to="/faq" className=' hover:text-black hover:rounded-md hover:bg-white  transition-all duration-300  px-4 py-2 '>About Us </Link></li>
                         </ul>
