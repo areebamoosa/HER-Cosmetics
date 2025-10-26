@@ -16,6 +16,7 @@ import Cosmetic from './Components/Cosmetics-Page/Page'
 import ProductDetails from './Components/Cosmetics-Page/ProductDetails'
 import NavbarSwitcher from './Components/Navbar/NavSwitcher'
 import Skin from './Components/Skin-Page/Page'
+import Fragrance from './Components/Fragrance-Page/Page'
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/create" element={<Create />} />
         <Route path="/skin" element={<Skin />} />
+        <Route path="/fragrance" element={<Fragrance />} />
 
         {/* Route of each product's detailed page */}
 

@@ -26,7 +26,7 @@ const Nav = () => {
                 <div className='text-black flex justify-center items-center mt-8 mb-2'>
                     <ul className='flex justify-center items-center gap-10 font cursor-pointer'>
                         <li><Link to="/cosmetic" className='light-pink-hover  hover:rounded-md transition-all duration-300  px-4 py-2 '>cosmetics </Link></li>
-                        <li><Link to="/" className='light-pink-hover  hover:rounded-md transition-all duration-300  px-4 py-2 '> fragrance</Link></li>
+                        <li><Link to="/fragrance" className='light-pink-hover  hover:rounded-md transition-all duration-300  px-4 py-2 '> fragrance</Link></li>
                         <li><Link to="/skin" className='light-pink-hover  hover:rounded-md transition-all duration-300  px-4 py-2 '> skin</Link></li>
                         <li><Link to="/discover" className='light-pink-hover  hover:rounded-md transition-all duration-300  px-4 py-2 '> discover</Link></li>
                         <li><Link to="/faq" className='light-pink-hover  hover:rounded-md transition-all duration-300  px-4 py-2 '>About Us </Link></li>
