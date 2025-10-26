@@ -25,7 +25,7 @@ const ProductDetails = () => {
         <>
             <Nav />
 
-            <div className='flex justify-center items-center w-[2000px] h-[1000px] gap-20'>
+            <div className='flex justify-center items-center w-[2000px] h-[1000px] gap-20 pt-[150px]'>
 
                 <div className='relative w-[700px] h-[800px] rounded-xl'>
                     <img src={mainImg} alt="prod" className='absolute h-full w-full object-cover rounded-t-lg transition-opacity duration-200 hover:opacity-0' />
@@ -93,7 +93,7 @@ const ProductDetails = () => {
 
             {/* Reviews Section */}
 
-            <section className='light-pink'>
+            <section className='light-pink mt-10'>
                 <div className='flex justify-center items-center flex-col p-10 gap-5'>
                     <h1 className='headFont dark-pink text-3xl'>REVIEWS</h1>
                     <div className='flex mt-2 gap-1'>
