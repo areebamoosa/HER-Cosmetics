@@ -53,23 +53,19 @@ const Faqs = () => {
         <>
             <Nav />
 
-            <div className="flex flex-col justify-center items-center mt-30">
-
+            <div className="flex flex-col justify-center items-center mt-20 pt-[100px] bg-white">
                 <div>
-                    <h1 className='headFont dark-pink text-4xl'>FAQ</h1>
+                    <h1 className='Font dark-pink text-4xl'>FAQ</h1>
                 </div>
-
-                <div className="mt-20 flex flex-col gap-8 ">
+                <div className="mt-10 flex flex-col gap-8 p-8 ">
                     {faqs.map((faq, index) => (
-
                         <FaqCard key={faq.id} {...faq} />
-
                     ))}
                 </div>
             </div>
+
             <Footer />
         </>
-
     );
 }
 
