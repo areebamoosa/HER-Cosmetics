@@ -33,6 +33,10 @@ body {
   background-color: #000408;
 }
 
+.light-pink{
+  background-color: #f8f1f4;
+}
+
 .light-pink-hover:hover {
   background-color: #f8f1f4;
   color: #000;

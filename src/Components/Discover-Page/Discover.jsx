@@ -1,22 +1,33 @@
 import React from 'react'
 import Nav from '../Navbar/Nav'
-import img from '../../assets/virtualtry.webp'
+import img from '../../assets/Discover.jpeg'
 
 const Discover = () => {
     return (
         <>
             <Nav />
 
-            <div className='mt-8  w-full h-[600px] overflow-hidden '>
-                <img src={img} alt="img" className=' w-full h-full object-cover' />
+            <div className=' pt-[100px] w-full h-[600px]  overflow-hidden '>
+
+                <div className='relative mt-8'>
+
+                    <img src={img} alt="img" className=' w-full h-full object-cover' />
+
+                    <div className="absolute bottom-[130px] left-[13%] -translate-x-1/5  ">
+                        <h1 className='text-3xl Font text-white font-extrabold'>ABOUT THE</h1>
+                        <h1 className='text-3xl Font text-white font-extrabold'>BRAND</h1>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div className='flex flex-col justify-center items-center bg-white p-20'>
+            <div className='flex flex-col justify-center items-center bg-white p-10'>
 
                 <div className='flex headFont text-2xl gap-10 dark-pink '>
-                    <h1>COSMETICS</h1>
-                    <h1>FRAGRANCE</h1>
-                    <h1>SKIN</h1>
+                    <h1 className=' rounded-md light-pink px-2 py-2 '>COSMETICS</h1>
+                    <h1 className='px-2 py-2'>FRAGRANCE</h1>
+                    <h1 className='px-2 py-2'>SKIN</h1>
                 </div>
 
                 <div className='font text-lg flex flex-col justify-center w-250 gap-5 mt-10 '>
