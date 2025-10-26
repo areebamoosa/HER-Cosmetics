@@ -25,19 +25,19 @@ const Page = () => {
             <div className='flex gap-5 m-15 '>
                 <div className='w-[130px] h-[130px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={eyes} alt="eyes" className='w-full h-full object-cover rounded-md' />
-                    <p className='Font dark-pink font-semibold'>eyes & brows</p>
+                    <p className='Font dark-pink font-semibold mt-2'>eyes & brows</p>
                 </div>
                 <div className='w-[130px] h-[130px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={best} alt="eyes" className='w-full h-full object-cover rounded-md' />
-                    <p className='Font dark-pink font-semibold'>best sellers</p>
+                    <p className='Font dark-pink font-semibold mt-2'>best sellers</p>
                 </div>
                 <div className='w-[130px] h-[130px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={face} alt="eyes" className='w-full h-full object-cover rounded-md' />
-                    <p className='Font dark-pink font-semibold'>face</p>
+                    <p className='Font dark-pink font-semibold mt-2'>face</p>
                 </div>
                 <div className='w-[130px] h-[130px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={feat} alt="eyes" className='w-full h-full object-cover rounded-md' />
-                    <p className='Font dark-pink font-semibold'>featured</p>
+                    <p className='Font dark-pink font-semibold mt-2'>featured</p>
                 </div>
             </div>
 
@@ -45,7 +45,6 @@ const Page = () => {
 
             <div className='flex justify-between items-center m-15'>
                 <p className='text-xl Font grey mt-5'>218 products</p>
-
 
                 <select className='border border-black px-2 py-2 rounded-md flex Font mt-5'>
                     <option>Sort by: Featured </option>
@@ -58,7 +57,7 @@ const Page = () => {
 
             <div className='m-10'>
                 <AllProducts />
-            </div>
+            </div>-
 
             <div className='mt-10 flex justify-center items-center'>
                 <Button text={"load more"} />

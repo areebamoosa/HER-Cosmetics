@@ -10,7 +10,7 @@ const Product = ({ title, price, desc, Img, hoverImg, smallImgs }) => {
         <>
             {/* Design Card of each Product */}
 
-            <div className='relative h-[560px] w-[420px] bg-white rounded-lg transition-all duration-500  group'>
+            <div className='relative h-[560px] w-[420px] bg-white rounded-lg transition-all duration-500  group shadow-md'>
 
                 <div className='relative h-[400px] w-[420px] rounded-t-lg '>
 
@@ -45,12 +45,14 @@ const Product = ({ title, price, desc, Img, hoverImg, smallImgs }) => {
 
                     <div className='flex  justify-between mt-1'>
                         <span className=' font-semibold text-lg'>{title}</span>
+                        <div>
+                        <i className="fa-solid fa-dollar-sign"></i>
                         <span className='font-semibold text-lg'>{price}</span>
+                        </div>
                     </div>
                     <p className='text-lg grey mt-[-2px] '>{desc}</p>
                 </div>
             </div >
-
         </>
     )
 }
