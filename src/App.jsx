@@ -17,7 +17,7 @@ import ProductDetails from './Components/Cosmetics-Page/ProductDetails'
 import NavbarSwitcher from './Components/Navbar/NavSwitcher'
 import Skin from './Components/Skin-Page/Page'
 import Fragrance from './Components/Fragrance-Page/Page'
-
+import SkinProductDetails from './Components/Skin-Page/ProductDetails'
 
 function App() {
 
@@ -49,10 +49,10 @@ function App() {
         <Route path="/skin" element={<Skin />} />
         <Route path="/fragrance" element={<Fragrance />} />
 
-        {/* Route of each product's detailed page */}
+        {/* Route of each product's detailed pages */}
 
         <Route path="/product/:id" element={<ProductDetails />} />
-
+        <Route path="/skin/:id" element={<SkinProductDetails />} />
 
       </Routes>
 
