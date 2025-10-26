@@ -18,6 +18,7 @@ import NavbarSwitcher from './Components/Navbar/NavSwitcher'
 import Skin from './Components/Skin-Page/Page'
 import Fragrance from './Components/Fragrance-Page/Page'
 import SkinProductDetails from './Components/Skin-Page/ProductDetails'
+import FragProductDetails from './Components/Fragrance-Page/ProductDetails'
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
 
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/skin/:id" element={<SkinProductDetails />} />
+        <Route path="/fragrance/:id" element={<FragProductDetails />} />
 
       </Routes>
 
