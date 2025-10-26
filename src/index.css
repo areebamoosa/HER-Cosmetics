@@ -11,12 +11,13 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  line-height: 18.7px;
 }
 
 .headFont {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+  font-family: UniversLTStd-Bold;
+  font-weight: 600;
+  line-height: 37.4px;
 }
 
 /* Custom Font Colours */
@@ -32,6 +33,28 @@ body {
   background-color: #000408;
 }
 
-.light-pink {
-  background-color: #f7eeeb;
+.light-pink-hover:hover {
+  background-color: #f8f1f4;
+  color: #000;
+}
+
+/* Animation of Main Logo  */
+
+@keyframes door-rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.animate-door-rotate {
+  display: inline-block;
+  animation: door-rotate 2.5s ease-in-out infinite;
+  transform-origin: center;
+  perspective: 1000px;
 }

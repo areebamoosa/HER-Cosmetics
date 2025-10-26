@@ -14,6 +14,7 @@ import Create from './Components/Accounts-Pages/Create'
 import Bag from './Components/Banners/Bag'
 import Cosmetic from './Components/Cosmetics-Page/Page'
 import ProductDetails from './Components/Cosmetics-Page/ProductDetails'
+import NavbarSwitcher from './Components/Navbar/NavSwitcher'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
 
         <Route path="/" element={
           <>
+            <NavbarSwitcher />
             <Page />
             <Category />
             <Cosmic />
@@ -45,7 +47,7 @@ function App() {
 
         {/* Route of each product's detailed page */}
 
-        <Route path="/product/:id" element={<ProductDetails/>} />
+        <Route path="/product/:id" element={<ProductDetails />} />
 
 
       </Routes>

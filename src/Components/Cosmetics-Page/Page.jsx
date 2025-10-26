@@ -1,15 +1,15 @@
 import React from 'react'
-import Nav from '../Navbar/Nav'
-import img from '../../assets/virtualtry.webp'
+import img from '../../assets/1.png'
 import AllProducts from './AllProducts'
 import Button from '../Button/Button'
 import Footer from '../Footer/Footer'
+import NavSwitcher from '../Navbar/NavSwitcher'
 
 const Page = () => {
     return (
         <>
-            <Nav />
-            <div className='mt-8  w-full h-[600px] overflow-hidden '>
+            <NavSwitcher />
+            <div className=' w-full h-[600px] overflow-hidden '>
                 <img src={img} alt="img" className=' w-full h-full object-cover' />
             </div>
             <div className='m-10'>
