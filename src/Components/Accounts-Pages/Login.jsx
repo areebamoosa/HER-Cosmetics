@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../Navbar/Nav'
+import AccountNav from '../Navbar/AccountNav'
 import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
 
@@ -8,7 +8,7 @@ const Login = () => {
     return (
         <>
 
-            <Nav />
+            <AccountNav />
 
             <div className='flex flex-col justify-center items-center  mt-80 '>
 
