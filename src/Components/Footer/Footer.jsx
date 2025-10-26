@@ -3,28 +3,18 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-
-            <div className='mt-[200px] flex flex-col justify-center items-center m-10'>
-
-
+            <div className='mt-[120px] flex flex-col justify-center items-center m-10'>
                 <div className='text-black  flex flex-col gap-3 font'>
-
                     <h1 className='text-xl font-normal'>sign up for updates:</h1>
-
                     <div className='flex justify-center items-center gap-6'>
-
                         <input type="text" placeholder='email address' className='w-150 h-10 border p-4 rounded-sm border-black' />
-
-                        <button className='w-40 h-10 border rounded-sm border-black grey cursor-pointer'>submit</button>
-
+                        <button className='w-40 h-10 border rounded-sm border-black  cursor-pointer hover:text-white hover:bg-black'>submit</button>
                     </div>
 
                     <div className='flex gap-1'>
                         <p className='grey'>by signing up you agree to our</p>
                         <p className='grey underline cursor-pointer'>terms</p>
                     </div>
-
-
                 </div>
 
                 <div className='text-3xl flex gap-10 mt-20 cursor-pointer'>
@@ -36,14 +26,13 @@ const Footer = () => {
 
                 </div>
 
-
                 <div className='flex gap-5 mt-20 text-lg grey font'>
-                    <p>contact us</p>
-                    <p>faq</p>
-                    <p>shipping</p>
-                    <p>order tracking</p>
-                    <p>rewards</p>
-                    <p>gift card balance</p>
+                    <p className='hover:underline cursor-pointer'>contact us</p>
+                    <p className='hover:underline cursor-pointer'>faq</p>
+                    <p className='hover:underline cursor-pointer'>shipping</p>
+                    <p className='hover:underline cursor-pointer'>order tracking</p>
+                    <p className='hover:underline cursor-pointer'>rewards</p>
+                    <p className='hover:underline cursor-pointer'>gift card balance</p>
                 </div>
 
                 <div className='flex gap-4 mt-15 text-base grey'>
@@ -54,14 +43,10 @@ const Footer = () => {
                     <p className='underline cursor-pointer'>cookie policy</p>
                 </div>
 
-
                 <div className='mt-8'>
-
                     <p className='dark-pink font-medium font text-lg'>Developed with <i className="fa-regular fa-heart " style={{ color: "#986e75" }}></i> by A.M</p>
                 </div>
-
             </div>
-
         </>
     )
 }
