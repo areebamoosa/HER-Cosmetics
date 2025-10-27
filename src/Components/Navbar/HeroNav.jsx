@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import Nav from './Nav'
 
 const HeroNav = () => {
+
+    const [open, setOpen] = useState(false);
+
     return (
         <>
             <div className="absolute top-0 left-0 w-full z-10 ">
@@ -18,7 +23,9 @@ const HeroNav = () => {
                         <div className='text-white flex justify-center items-center gap-12 text-2xl mr-10 cursor-pointer'>
                             <p   ><i className="fa-solid fa-heart"></i></p>
                             <p><Link to="/login"><i className="fa-solid fa-user"></i></Link></p>
-                            <p><i className="fa-solid fa-magnifying-glass"></i></p>
+                            <div className='relative'>
+                                <button onClick={() => setOpen(!open)} className='cursor-pointer'><i className="fa-solid fa-magnifying-glass"></i>  </button>
+                            </div>
                             <p><i className="fa-solid fa-bag-shopping"></i></p>
                         </div>
                     </div>
@@ -34,6 +41,28 @@ const HeroNav = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Search Dropdown */}
+            {open && (
+                <div className='fixed top-0 left-0 w-full h-[250px] bg-white z-40 flex flex-col items-center justify-center'>
+                    <Nav />
+
+                    <div className='flex justify-center items-center gap-10 mt-40'>
+                        <div className="relative">
+                            <i className="fa-solid fa-magnifying-glass font-light absolute left-4 top-1/2 -translate-y-1/2 text-xl"></i>
+                            <input
+                                type="text"
+                                className="w-[1500px] h-[50px] border border-black rounded-md pl-12 pr-4 text-lg outline-none"
+                                placeholder="Search..."
+                            />
+                        </div>
+
+                        <button onClick={() => setOpen(false)} className='cursor-pointer'>
+                            <i className="fa-solid fa-xmark text-3xl text-black"></i>
+                        </button>
+                    </div>
+                </div>
+            )}
         </>
     )
 }
