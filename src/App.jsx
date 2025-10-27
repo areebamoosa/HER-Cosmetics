@@ -39,17 +39,14 @@ function App() {
             <div className='mt-20'>
               <Lipsticks />
             </div>
+            <Blogger/>
 
 
 
+            {/* <Cosmic/> */}
 
+            {/* <Limited/> */}
 
-
-            {/* <Cosmic/>
-
-            <Limited/>
-
-            <Blogger/> */}
 
 
 
