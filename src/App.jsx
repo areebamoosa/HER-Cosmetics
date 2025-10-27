@@ -38,24 +38,23 @@ function App() {
             <Feat />
             <Bag />
             <div className='mt-20'>
-            <Lipsticks />
+              <Lipsticks />
             </div>
             <Blogger />
             <div className='mt-20'>
-            <Cosmic />
+              <Cosmic />
             </div>
             <SecFeat />
             <div className='mt-20'>
-            <Limited/>
+              <Limited />
             </div>
-
-
-
-
-
-
+            <div className='mt-60'>
+              <Footer />
+            </div>
           </>
         } />
+
+        {/* Routes of Pages */}
 
         <Route path="/cosmetic" element={<Cosmetic />} />
         <Route path="/discover" element={<Discover />} />
