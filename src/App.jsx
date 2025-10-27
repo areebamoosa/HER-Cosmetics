@@ -19,6 +19,7 @@ import Skin from './Components/Skin-Page/Page'
 import Fragrance from './Components/Fragrance-Page/Page'
 import SkinProductDetails from './Components/Skin-Page/ProductDetails'
 import FragProductDetails from './Components/Fragrance-Page/ProductDetails'
+import Feat from './Components/FeaturedProducts/Feat'
 
 function App() {
 
@@ -33,12 +34,12 @@ function App() {
             <NavbarSwitcher />
             <Page />
             <Category />
-            <Cosmic />
-            <Banner />
-            <Product />
-            <Bag />
-            <ProductUpcoming />
-            <Footer />
+            <Feat />
+
+
+
+
+
           </>
         } />
 
