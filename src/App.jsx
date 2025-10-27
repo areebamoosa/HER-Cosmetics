@@ -21,15 +21,15 @@ import SkinProductDetails from './Components/Skin-Page/ProductDetails'
 import FragProductDetails from './Components/Fragrance-Page/ProductDetails'
 import Feat from './Components/FeaturedProducts/Feat'
 import SecFeat from './Components/FeaturedProducts/SecFeat'
+import Transition from './Components/Transition/Transition'
 
 function App() {
 
   return (
 
     <Router>
-
+      <Transition />
       <Routes>
-
         <Route path="/" element={
           <>
             <NavbarSwitcher />

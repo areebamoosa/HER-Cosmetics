@@ -8,7 +8,7 @@ body {
 /* Custom Font Styles */
 .font {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto; 
+  font-optical-sizing: auto;
   font-style: normal;
   line-height: 18.7px;
 }
@@ -32,7 +32,7 @@ body {
   background-color: #000408;
 }
 
-.light-pink{
+.light-pink {
   background-color: #f8f1f4;
 }
 
@@ -60,4 +60,28 @@ body {
   animation: door-rotate 2.5s ease-in-out infinite;
   transform-origin: center;
   perspective: 1000px;
+}
+
+/* Animation of Transition */
+
+.fade1,
+.fade2 {
+  position: absolute;
+  opacity: 0;
+  animation: fadeInOut 6s infinite;
+}
+
+.fade2 {
+  animation-delay: 3s;
+}
+
+@keyframes fadeInOut {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
