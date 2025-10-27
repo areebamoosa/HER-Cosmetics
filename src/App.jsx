@@ -37,6 +37,11 @@ function App() {
             <Feat />
 
 
+            <Bag/>
+
+
+
+
 
 
 
