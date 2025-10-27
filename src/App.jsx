@@ -20,6 +20,7 @@ import Fragrance from './Components/Fragrance-Page/Page'
 import SkinProductDetails from './Components/Skin-Page/ProductDetails'
 import FragProductDetails from './Components/Fragrance-Page/ProductDetails'
 import Feat from './Components/FeaturedProducts/Feat'
+import SecFeat from './Components/FeaturedProducts/SecFeat'
 
 function App() {
 
@@ -39,7 +40,8 @@ function App() {
             <div className='mt-20'>
               <Lipsticks />
             </div>
-            <Blogger/>
+            <Blogger />
+            <SecFeat />
 
 
 
