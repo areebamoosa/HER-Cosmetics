@@ -2,11 +2,11 @@ import './index.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Page from './Components/Hero-Page/Page'
 import Category from './Components/Category/Category'
-import Product from './Components/Banners/Product'
 import Cosmic from './Components/Banners/Cosmic'
 import Footer from './Components/Footer/Footer'
-import ProductUpcoming from './Components/Banners/Product'
-import Banner from './Components/Banners/Banner'
+import Limited from './Components/Banners/Limited'
+import Blogger from './Components/Banners/Blogger'
+import Lipsticks from './Components/Banners/Lipsticks'
 import Discover from './Components/Discover-Page/Discover'
 import Faqs from './Components/AboutUs-Page/Faqs'
 import Login from './Components/Accounts-Pages/Login'
@@ -35,9 +35,25 @@ function App() {
             <Page />
             <Category />
             <Feat />
+            <Bag />
+            <div className='mt-20'>
+              <Lipsticks />
+            </div>
 
 
-            <Bag/>
+
+
+
+
+            {/* <Cosmic/>
+
+            <Limited/>
+
+            <Blogger/> */}
+
+
+
+
 
 
 

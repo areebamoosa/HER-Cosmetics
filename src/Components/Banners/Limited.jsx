@@ -2,7 +2,7 @@ import React from 'react'
 import lip from '../../assets/virtualtry.webp'
 import Button from '../Button/Button'
 
-const Product = () => {
+const Limited = () => {
   return (
     <>
       <div className='relative'>
@@ -33,4 +33,4 @@ const Product = () => {
   )
 }
 
-export default Product
+export default Limited

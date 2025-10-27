@@ -1,14 +1,14 @@
 import React from 'react'
 import Button from '../Button/Button'
-import Blogger from '../../assets/Blogger.mp4'
+import Blog from '../../assets/Blogger.mp4'
 
-const Banner = () => {
+const Blogger = () => {
     return (
         <>
             <div className='flex justify-center items-center w-[2000px] h-[1000px] rounded-lg'>
 
                 <div className='w-[1000px] h-[1000px] overflow-hidden rounded-l-lg'>
-                    <video src={Blogger} autoPlay loop muted playsInline className='w-full h-full object-cover'></video>
+                    <video src={Blog} autoPlay loop muted playsInline className='w-full h-full object-cover'></video>
                 </div>
 
                 <div>
@@ -54,4 +54,4 @@ const Banner = () => {
     )
 }
 
-export default Banner
+export default Blogger
