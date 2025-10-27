@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const HeroNav = () => {
     return (
         <>
-            <div className="absolute top-0 left-0 w-full z-10">
+            <div className="absolute top-0 left-0 w-full z-10 ">
                 <div className="fixed  top-0 left-0 w-full  z-50  p-2">
-                    <div className='text-white flex justify-between items-center mt-6 text-2xl '>
+                    <div className='text-white flex justify-between items-center mt-12 text-2xl '>
                         <div className='text-white flex justify-center items-center gap-2 ml-10'>
                             <p className='font'>us</p>
                             <i className="fa-solid fa-dollar-sign"></i>
