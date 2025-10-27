@@ -41,23 +41,13 @@ function App() {
             <Lipsticks />
             </div>
             <Blogger />
-            <SecFeat />
             <div className='mt-20'>
             <Cosmic />
             </div>
-
-
-
-
-
-
-            {/* <Limited/> */}
-
-
-
-
-
-
+            <SecFeat />
+            <div className='mt-20'>
+            <Limited/>
+            </div>
 
 
 

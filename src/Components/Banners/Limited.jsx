@@ -12,18 +12,18 @@ const Limited = () => {
           <img src={lip} alt="lip" className='w-full h-full object-cover' />
         </div>
 
-        <div className='absolute bottom-1/3 left-1/2 -translate-x-1/2 text-white flex flex-col justify-center items-center '>
+        <div className='absolute bottom-1/4 left-1/2 -translate-x-1/2 text-white flex flex-col justify-center items-center '>
 
 
-          <h1 className=' dark-pink headFont text-3xl'>LIMITED EDITION</h1>
-          <div className='mt-4'>
+          <h1 className=' dark-pink font font-semibold text-3xl'>LIMITED EDITION</h1>
+          <div className='mt-8'>
 
             <h2 className=' text-lg text-white font '>try on lipsticks, blushes & more to</h2>
-            <h2 className=' text-lg text-white font'>discover your new favourite shade.</h2>
+            <h2 className=' text-lg text-white font mt-2'>discover your new favourite shade.</h2>
 
           </div>
 
-          <div className='mt-4'>
+          <div className='mt-8'>
 
             <Button text={'shop now'} />
           </div>
