@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from '../Button/Button'
 import hovBag from '../../assets/Bag1.jpeg'
 import bag from '../../assets/Bag2.jpeg'
+import Button from '../Button/Button'
 
 const Bag = () => {
     return (

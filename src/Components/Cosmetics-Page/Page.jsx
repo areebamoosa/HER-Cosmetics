@@ -1,6 +1,5 @@
 import React from 'react'
 import AllProducts from './AllProducts'
-import Button from '../Button/Button'
 import Footer from '../Footer/Footer'
 import NavSwitcher from '../Navbar/NavSwitcher'
 import img from '../../assets/Red.jpeg'
@@ -8,6 +7,7 @@ import eyes from '../../assets/eyes.avif'
 import best from '../../assets/best.avif'
 import face from '../../assets/Fac.avif'
 import feat from '../../assets/Feat.avif'
+import TransButton from '../Button/TransButton'
 
 const Page = () => {
     return (
@@ -57,10 +57,10 @@ const Page = () => {
 
             <div className='m-10'>
                 <AllProducts />
-            </div>-
+            </div>
 
             <div className='mt-10 flex justify-center items-center'>
-                <Button text={"load more"} />
+                <TransButton text={"load more"} />
             </div>
             <Footer />
         </>

@@ -3,7 +3,10 @@ import React from 'react'
 const Button = ({ text, width = "w-32", height = "h-10" }) => {
   return (
     <>
-      <button className={`${width} ${height} font grey bg-white border-1 border-black px-5 py-2 rounded-md hover:bg-black hover:text-white cursor-pointer`}>{text}</button>
+      {/* White Button with black on hover*/}
+
+      <button className={`${width} ${height} font border border-black text-black bg-white font-light  px-5 py-2 rounded-md hover:bg-black hover:text-white cursor-pointer`}>{text}</button>
+
     </>
   )
 }

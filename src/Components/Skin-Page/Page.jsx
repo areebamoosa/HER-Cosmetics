@@ -1,11 +1,9 @@
 import React from 'react'
 import AllProducts from './AllProducts'
-import Button from '../Button/Button'
+import TransButton from '../Button/TransButton'
 import Footer from '../Footer/Footer'
 import NavSwitcher from '../Navbar/NavSwitcher'
 import img from '../../assets/skin.png'
-
-
 import main9 from '../../assets/pd9.webp'
 import hov9 from '../../assets/pd9h.webp'
 import hov11 from '../../assets/pd11h.webp'
@@ -60,10 +58,10 @@ const Page = () => {
 
             <div className='m-10'>
                 <AllProducts />
-            </div>-
+            </div>
 
-            <div className='mt-10 flex justify-center items-center'>
-                <Button text={"load more"} />
+            <div className='mt-30 flex justify-center items-center'>
+                <TransButton text={"load more"} />
             </div>
             <Footer />
         </>

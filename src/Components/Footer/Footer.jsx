@@ -1,4 +1,5 @@
 import React from 'react'
+import TransButton from '../Button/TransButton'
 
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
                     <h1 className='text-xl font-normal'>sign up for updates:</h1>
                     <div className='flex justify-center items-center gap-6'>
                         <input type="text" placeholder='email address' className='w-150 h-10 border p-4 rounded-sm border-black' />
-                        <button className='w-40 h-10 border rounded-sm border-black  cursor-pointer hover:text-white hover:bg-black'>submit</button>
+                        <TransButton text={'submit'} width='w-40' height='h-10' />
                     </div>
 
                     <div className='flex gap-1'>
