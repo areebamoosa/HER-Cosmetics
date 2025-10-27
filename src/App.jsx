@@ -38,14 +38,18 @@ function App() {
             <Feat />
             <Bag />
             <div className='mt-20'>
-              <Lipsticks />
+            <Lipsticks />
             </div>
             <Blogger />
             <SecFeat />
+            <div className='mt-20'>
+            <Cosmic />
+            </div>
 
 
 
-            {/* <Cosmic/> */}
+
+
 
             {/* <Limited/> */}
 
