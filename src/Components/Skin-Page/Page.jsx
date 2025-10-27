@@ -19,7 +19,7 @@ const Page = () => {
             <div className='relative w-full h-[650px] overflow-hidden '>
                 <img src={img} alt="img" className=' w-full h-full object-cover' />
                 <div className="absolute bottom-[40px] left-[7%] -translate-x-1/5  ">
-                    <h1 className='text-3xl Font text-white font-extrabold'>HER COSMETICS</h1>
+                    <h1 className='text-3xl Font text-white font-extrabold'>HER'S SKIN</h1>
                 </div>
             </div>
 
