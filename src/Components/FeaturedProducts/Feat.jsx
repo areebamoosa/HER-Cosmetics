@@ -9,7 +9,7 @@ import { productsDetails as fragrance } from '../Fragrance-Page/AllProducts'
 const Feat = () => {
 
     const featured = [
-        cosmetics[2], skin[1], fragrance[2], skin[2]
+        cosmetics[2], skin[1], skin[2], skin[3]
     ]
 
     return (

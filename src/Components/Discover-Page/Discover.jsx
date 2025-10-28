@@ -9,7 +9,7 @@ const Discover = () => {
 
             <div className=' pt-[100px] w-full h-[600px]  overflow-hidden '>
 
-                <div className='relative mt-8'>
+                <div className='relative '>
 
                     <img src={img} alt="img" className=' w-full h-full object-cover' />
 

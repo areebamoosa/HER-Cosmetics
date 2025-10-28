@@ -8,7 +8,7 @@ import { productsDetails as fragrance } from '../Fragrance-Page/AllProducts'
 const SecFeat = () => {
 
     const secFeatured = [
-        cosmetics[0], skin[3], fragrance[1], skin[0]
+        cosmetics[0], skin[3], cosmetics[5], skin[0]
     ]
 
     return (

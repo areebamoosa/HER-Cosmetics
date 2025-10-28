@@ -49,7 +49,7 @@ const Category = () => {
 
 
                     <div >
-                        <button onClick={prev} className="bg-white rounded-full w-10 h-10 shadow-md hover:bg-pink-400 hover:text-white transition-all duration-200"> <i className="fa-solid fa-arrow-left"></i></button>
+                        <button onClick={prev} className="bg-white rounded-full w-10 h-10 shadow-md hover:bg-pink-400 hover:text-white transition-all duration-200 cursor-pointer"> <i className="fa-solid fa-arrow-left"></i></button>
                     </div>
 
                     <div className='flex gap-8'>
@@ -72,7 +72,7 @@ const Category = () => {
                     </div>
 
                     <div>
-                        <button onClick={next} className="bg-white rounded-full w-10 h-10  shadow-md hover:bg-pink-400 hover:text-white transition-all duration-200"> <i className="fa-solid fa-arrow-right"></i></button>
+                        <button onClick={next} className="bg-white rounded-full w-10 h-10  shadow-md hover:bg-pink-400 hover:text-white transition-all duration-200 cursor-pointer"> <i className="fa-solid fa-arrow-right"></i></button>
                     </div>
 
                 </div>
