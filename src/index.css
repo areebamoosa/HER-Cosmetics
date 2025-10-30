@@ -41,6 +41,11 @@ body {
   color: #000;
 }
 
+/* Custom Border Color */
+.border-col {
+  border-color: #e7dae2;
+}
+
 /* Animation of Main Logo  */
 
 @keyframes door-rotate {
