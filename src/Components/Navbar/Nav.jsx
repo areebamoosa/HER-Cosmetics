@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
+import CartSideBar from '../Cart/CartSideBar';
 
 const Nav = () => {
 
     const [open, setOpen] = useState(false);
+    const [isCartOpen, setIsCartOpen] = useState(false);
 
     return (
         <>
@@ -25,7 +27,8 @@ const Nav = () => {
                         <div className='relative'>
                             <button onClick={() => setOpen(!open)} className='cursor-pointer'><i className="fa-solid fa-magnifying-glass"></i>  </button>
                         </div>
-                        <p><i className="fa-solid fa-bag-shopping"></i></p>
+                        <button onClick={() => setIsCartOpen(!isCartOpen)}><i className="fa-solid fa-bag-shopping"></i> </button>
+
                     </div>
                 </div>
 
@@ -61,6 +64,9 @@ const Nav = () => {
                     </div>
                 </div>
             )}
+
+            {/* Cart Side Bar */}
+            {isCartOpen && <CartSideBar onClose={() => setIsCartOpen(false)} />}
         </>
     )
 }

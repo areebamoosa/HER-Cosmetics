@@ -2,10 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
 import Nav from './Nav'
+import CartSideBar from '../Cart/CartSideBar';
 
 const AccountNav = () => {
 
     const [open, setOpen] = useState(false);
+    const [isCartOpen, setIsCartOpen] = useState(false);
+
 
     return (
         <>
@@ -59,6 +62,11 @@ const AccountNav = () => {
                     </div>
                 </div>
             )}
+
+            {/* Cart Side Bar */}
+
+            {isCartOpen && <CartSideBar onClose={() => setIsCartOpen(false)} />}
+
         </>
     )
 }
