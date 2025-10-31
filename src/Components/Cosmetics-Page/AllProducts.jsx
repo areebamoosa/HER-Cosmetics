@@ -161,7 +161,7 @@ const AllProducts = () => {
   return (
     <>
       <div className='grid grid-cols-4 gap-15 m-6'>
-        {productsDetails.map((prod, index) => (
+        {productsDetails.map((prod) => (
           <Link to={`/product/${prod.id}`} key={prod.id} >
             <Product  {...prod} />
           </Link>

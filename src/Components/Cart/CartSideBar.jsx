@@ -10,7 +10,7 @@ import r2 from '../../assets/pd12h.webp'
 import r3 from '../../assets/pd8s-3.webp'
 
 const CartSideBar = ({ onClose }) => {
-  const { cart, removeFromCart } = useCart();
+  const { cart, removeFromCart, addToCart, decreaseQuantity } = useCart();
 
   return (
     <>
@@ -90,20 +90,44 @@ const CartSideBar = ({ onClose }) => {
                 ) : (
                   <div className="flex flex-col gap-6">
                     {cart.map((item) => (
-                      <div className=" border border-col p-2 rounded-md ">
-                        <div className="flex justify-between items-center ">
+
+                      <div key={item.id} className="border border-col p-2 rounded-md">
+
+                        <div className="flex gap-3">
+
                           <div className="w-30 h-30 rounded-md">
-                            <img src={item.Img} alt="itemImg" className="w-full h-full object-cover rounded-md" />
+                            <img
+                              src={item.Img}
+                              alt="itemImg"
+                              className="w-full h-full object-cover rounded-md"
+                            />
                           </div>
-                          <div className=" mr-5  text-md font-semibold flex flex-col gap-2 items-center">
-                            <div className="flex justify-center items-center">
-                              <p>{item.title} - </p>
-                              <p>36$</p>
-                            </div>
-                            <div className="border border-black px-4 py-2 rounded-md mt-5">
-                              <button className="underline grey cursor-pointer" onClick={() => removeFromCart(item.id)}>
+
+                          <div className="flex-1 flex flex-col justify-between">
+
+                            <div className="flex justify-between items-start">
+                              <div>
+                                <p className="font-semibold mt-1">{item.title} - ${item.price}</p>
+                                <p className="text-sm text-gray-600 mt-2">{item.desc}</p>
+                              </div>
+                              <button
+                                className="underline grey cursor-pointer mr-3 mt-1 text-sm"
+                                onClick={() => removeFromCart(item.id)}
+                              >
                                 <i className="fa-solid fa-trash"></i> Remove
                               </button>
+                            </div>
+
+                            <div className="self-end mt-3">
+                              <div className="px-4 py-1 border border-black rounded-md w-28 h-10 flex justify-around items-center">
+                                <button className="cursor-pointer" onClick={() => decreaseQuantity(item.id)}>
+                                  -
+                                </button>
+                                <span>{item.quantity}</span>
+                                <button className="cursor-pointer" onClick={() => addToCart(item)}>
+                                  +
+                                </button>
+                              </div>
                             </div>
                           </div>
                         </div>
