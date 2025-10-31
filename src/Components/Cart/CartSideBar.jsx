@@ -8,9 +8,13 @@ import free4 from '../../assets/free4.avif'
 import r1 from '../../assets/pd5.webp'
 import r2 from '../../assets/pd12h.webp'
 import r3 from '../../assets/pd8s-3.webp'
+import { Link } from "react-router-dom";
 
 const CartSideBar = ({ onClose }) => {
   const { cart, removeFromCart, addToCart, decreaseQuantity } = useCart();
+
+  // Total price of all items in the cart
+  const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   return (
     <>
@@ -173,10 +177,10 @@ const CartSideBar = ({ onClose }) => {
           <div className="fixed bottom-0 left-0 p-5 w-full h-40 flex flex-col gap-2 bg-white">
             <div className="flex text-xl font-semibold justify-between items-center font">
               <p>estimated total</p>
-              <span>$21</span>
+              <span>${total.toFixed(2)}</span>
             </div>
             <p className="grey">shipping & discounts calculated at checkout</p>
-            <button className="bg-black text-white px-5 py-2 w-140 rounded-md cursor-pointer">checkout</button>
+            <Link to="/checkout"><button className="bg-black text-white px-5 py-2 w-140 rounded-md cursor-pointer">checkout</button></Link>
           </div>
         </div>
       </div>

@@ -97,15 +97,15 @@ export const productsDetails = [
     smallImgs: [main4, hov4, s4]
   }
 ]
-// <Link to={`/skin/${prod.id}`} key={prod.id}>
-{/* </Link> */}
 
 const AllProducts = () => {
   return (
     <>
-      <div className='grid grid-cols-4 gap-15 m-6 link-wrapper'>
-        {productsDetails.map((prod, index) => (
-            <Product  {...prod} key={prod.id} />
+      <div className='grid grid-cols-4 gap-15 m-6'>
+        {productsDetails.map((prod) => (
+          <Link to={`/skin/${prod.id}`} key={prod.id} >
+            <Product  {...prod} />
+          </Link>
         ))}
       </div>
     </>

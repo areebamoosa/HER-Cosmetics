@@ -22,6 +22,7 @@ import FragProductDetails from './Components/Fragrance-Page/ProductDetails'
 import Feat from './Components/FeaturedProducts/Feat'
 import SecFeat from './Components/FeaturedProducts/SecFeat'
 import Transition from './Components/Transition/Transition'
+import CheckoutPage from './Components/Cart/CheckoutPage'
 
 function App() {
 
@@ -63,6 +64,7 @@ function App() {
         <Route path="/create" element={<Create />} />
         <Route path="/skin" element={<Skin />} />
         <Route path="/fragrance" element={<Fragrance />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
 
         {/* Route of each product's detailed pages */}
 

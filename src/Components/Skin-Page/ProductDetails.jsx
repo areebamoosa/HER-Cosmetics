@@ -8,11 +8,13 @@ import { useState } from 'react'
 import Footer from '../Footer/Footer'
 import Review from '../Reviews/Review'
 import TransButton from '../Button/TransButton'
-
+import {useCart} from '../Cart/CartContext'
 
 const ProductDetails = () => {
 
     const { id } = useParams();
+    const { addToCart } = useCart();
+
     const product = productsDetails.find((p) => p.id === Number(id));
 
     if (!product) {
@@ -61,7 +63,10 @@ const ProductDetails = () => {
                     </div>
 
                     <div className='flex justify-center items-center mt-5'>
-                        <TransButton text={"add to cart"} width="w-[600px]" />
+                        {/* <TransButton text={"add to cart"} width="w-[600px]" /> */}
+
+                        <button onClick={() => addToCart(product)} className="mt-5 w-[600px] bg-black text-white py-3 rounded-md hover:bg-gray-800 transition"> Add to Cart </button>
+
                     </div>
 
                     <div className='mt-5'>
