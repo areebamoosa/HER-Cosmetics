@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useState } from 'react';
 import Nav from './Nav'
 import CartSideBar from '../Cart/CartSideBar';
+import Search from '../ProductSearch/Search';
+import { useSearch } from '../ProductSearch/SearchContext';
 
 const AccountNav = () => {
 
     const [open, setOpen] = useState(false);
     const [isCartOpen, setIsCartOpen] = useState(false);
+    const { searchItem, setSearchItem } = useSearch();
 
+
+    const inputRef = useRef(null);
+
+    useEffect(() => {
+        if (open && inputRef.current) {
+            inputRef.current.focus();
+        }
+    }, [open]);
 
     return (
         <>
@@ -25,7 +35,7 @@ const AccountNav = () => {
                     <p><i className="fa-solid fa-heart"></i></p>
                     <p><Link to="/login"><i className="fa-solid fa-user"></i></Link></p>
                     <div className='relative'>
-                        <button onClick={() => setOpen(!open)} className='cursor-pointer'><i className="fa-solid fa-magnifying-glass"></i>  </button>
+                        <button onClick={() => setOpen(true)} className='cursor-pointer'><i className="fa-solid fa-magnifying-glass"></i>  </button>
                     </div>
                     <p><i className="fa-solid fa-bag-shopping"></i></p>
                 </div>
@@ -43,14 +53,17 @@ const AccountNav = () => {
 
             {/* Search Dropdown */}
             {open && (
-                <div className='fixed top-0 left-0 w-full h-[250px] bg-white z-40 flex flex-col items-center justify-center'>
+                <div className="fixed top-0 left-0 w-full min-h-screen bg-white z-40 flex flex-col items-center overflow-y-auto pb-10">
                     <Nav />
 
                     <div className='flex justify-center items-center gap-10 mt-40'>
                         <div className="relative">
                             <i className="fa-solid fa-magnifying-glass font-light absolute left-4 top-1/2 -translate-y-1/2 text-xl"></i>
                             <input
+                                ref={inputRef}
                                 type="text"
+                                value={searchItem}
+                                onChange={(e) => setSearchItem(e.target.value)}
                                 className="w-[1500px] h-[50px] border border-black rounded-md pl-12 pr-4 text-lg outline-none"
                                 placeholder="Search..."
                             />
@@ -60,6 +73,10 @@ const AccountNav = () => {
                             <i className="fa-solid fa-xmark text-3xl text-black"></i>
                         </button>
                     </div>
+                    <div className="w-full mt-10 px-10">
+                        <Search />
+                    </div>
+
                 </div>
             )}
 

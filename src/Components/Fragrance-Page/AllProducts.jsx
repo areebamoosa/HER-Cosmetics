@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import Product from '../Cosmetics-Page/Product'
 import { Link } from 'react-router-dom'
-
-
 import main9 from '../../assets/pd9.webp'
 import hov9 from '../../assets/pd9h.webp'
 import main10 from '../../assets/pd10.webp'
@@ -11,8 +9,6 @@ import main11 from '../../assets/pd11.webp'
 import hov11 from '../../assets/pd11h.webp'
 import main12 from '../../assets/pd12.webp'
 import hov12 from '../../assets/pd12h.webp'
-
-
 import main13 from '../../assets/pd13.webp'
 import hov13 from '../../assets/pd13h.webp'
 import main14 from '../../assets/pd14.webp'
@@ -21,9 +17,6 @@ import main15 from '../../assets/pd15.webp'
 import hov15 from '../../assets/pd15h.webp'
 import main16 from '../../assets/pd16.webp'
 import hov16 from '../../assets/pd16h.webp'
-
-
-
 
 export const productsDetails = [
   {
