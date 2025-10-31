@@ -8,11 +8,15 @@ import best from '../../assets/best.avif'
 import face from '../../assets/Fac.avif'
 import feat from '../../assets/Feat.avif'
 import TransButton from '../Button/TransButton'
+import Search from '../ProductSearch/Search'
 
 const Page = () => {
     return (
         <>
             <NavSwitcher />
+
+            <Search category="Cosmetics" />
+
             <div className='relative w-full h-[550px] overflow-hidden '>
                 <img src={img} alt="img" className=' w-full h-full object-cover' />
                 <div className="absolute bottom-[40px] left-[7%] -translate-x-1/5  ">

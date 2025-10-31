@@ -2,11 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
 import CartSideBar from '../Cart/CartSideBar';
+import { useSearch } from '../ProductSearch/SearchContext';
 
 const Nav = () => {
 
     const [open, setOpen] = useState(false);
     const [isCartOpen, setIsCartOpen] = useState(false);
+    const {searchItem, setSearchItem} = useSearch();
 
     return (
         <>
@@ -53,6 +55,8 @@ const Nav = () => {
                             <i className="fa-solid fa-magnifying-glass font-light absolute left-4 top-1/2 -translate-y-1/2 text-xl"></i>
                             <input
                                 type="text"
+                                value={searchItem}
+                                onChange={ (e)  => setSearchItem(e.target.value)  }
                                 className="w-[1500px] h-[50px] border border-black rounded-md pl-12 pr-4 text-lg outline-none"
                                 placeholder="Search..."
                             />

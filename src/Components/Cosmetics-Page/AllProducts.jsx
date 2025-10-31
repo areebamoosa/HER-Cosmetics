@@ -41,6 +41,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main1,
     hoverImg: hov1,
+    category : "Cosmetics",
     smallImgs: [hov1, main1]
   },
   {
@@ -50,6 +51,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main2,
     hoverImg: hov2,
+    category : "Cosmetics",
     smallImgs: [hov2, main2]
   },
   {
@@ -59,6 +61,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main5,
     hoverImg: hov5,
+    category : "Cosmetics",
     smallImgs: [s5, s6, s7, s8]
   },
   {
@@ -68,6 +71,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main4,
     hoverImg: hov4,
+    category : "Cosmetics",
     smallImgs: [main4, hov4, s4]
   },
   {
@@ -77,6 +81,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main3,
     hoverImg: hov3,
+    category : "Cosmetics",
     smallImgs: [s1, s2, s3]
   },
   {
@@ -86,6 +91,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main6,
     hoverImg: hov6,
+    category : "Cosmetics",
     smallImgs: [main6, hov6]
   },
   {
@@ -95,6 +101,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main7,
     hoverImg: hov7,
+    category : "Cosmetics",
     smallImgs: [s9, s10, s11, s12]
   },
   {
@@ -104,6 +111,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main8,
     hoverImg: hov8,
+    category : "Cosmetics",
     smallImgs: [s13, s14, s15]
   },
   {
@@ -113,6 +121,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main1,
     hoverImg: hov1,
+    category : "Cosmetics",
     smallImgs: [hov1, main1]
   },
   {
@@ -122,6 +131,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main2,
     hoverImg: hov2,
+    category : "Cosmetics",
     smallImgs: [hov2, main2]
   },
   {
@@ -131,6 +141,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main5,
     hoverImg: hov5,
+    category : "Cosmetics",
     smallImgs: [s5, s6, s7, s8]
   },
   {
@@ -140,6 +151,7 @@ export const productsDetails = [
     desc: "King Kylie matte lip kit",
     Img: main4,
     hoverImg: hov4,
+    category : "Cosmetics",
     smallImgs: [main4, hov4, s4]
   }
 ]
