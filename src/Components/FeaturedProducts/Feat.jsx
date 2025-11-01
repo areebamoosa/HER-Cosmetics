@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Product from '../Skin-Page/Product'
 import { productsDetails as skin } from '../Skin-Page/AllProducts'
 
@@ -17,10 +16,8 @@ const Feat = () => {
 
             <div className='flex flex-col justify-center items-center mt-10'>
                 <div className='grid grid-cols-4 gap-8'>
-                    {featured.map((feat) => (
-                        <Link to={`/skin/${feat.id}`} key={feat.id}>
-                            <Product {...feat} />
-                        </Link>
+                    {featured.map((prod) => (
+                        <Product key={prod.id} {...prod} />
                     ))}
                 </div>
             </div>

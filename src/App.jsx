@@ -58,12 +58,12 @@ function App() {
         {/* Routes of Pages */}
 
         <Route path="/cosmetic" element={<Cosmetic />} />
+        <Route path="/skin" element={<Skin />} />
+        <Route path="/fragrance" element={<Fragrance />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/faq" element={<Faqs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/create" element={<Create />} />
-        <Route path="/skin" element={<Skin />} />
-        <Route path="/fragrance" element={<Fragrance />} />
         <Route path="/checkout" element={<CheckoutPage />} />
 
         {/* Route of each product's detailed pages */}
@@ -75,7 +75,6 @@ function App() {
       </Routes>
 
     </Router>
-
   )
 }
 

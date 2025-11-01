@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Nav from '../Navbar/Nav'
 import FaqCard from "./FaqCard";
 import Footer from '../Footer/Footer'
@@ -58,7 +58,7 @@ const Faqs = () => {
                     <h1 className='Font dark-pink text-4xl mt-10'>FAQ</h1>
                 </div>
                 <div className="mt-10 flex flex-col gap-8 p-8 ">
-                    {faqs.map((faq, index) => (
+                    {faqs.map((faq) => (
                         <FaqCard key={faq.id} {...faq} />
                     ))}
                 </div>
