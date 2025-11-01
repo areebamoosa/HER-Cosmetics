@@ -37,7 +37,7 @@ const Nav = () => {
                         <div className='relative'>
                             <button onClick={() => setOpen(true)} className='cursor-pointer'><i className="fa-solid fa-magnifying-glass"></i>  </button>
                         </div>
-                        <button onClick={() => setIsCartOpen(!isCartOpen)}><i className="fa-solid fa-bag-shopping"></i> </button>
+                        <button className='cursor-pointer' onClick={() => setIsCartOpen(!isCartOpen)}><i className="fa-solid fa-bag-shopping"></i> </button>
 
                     </div>
                 </div>

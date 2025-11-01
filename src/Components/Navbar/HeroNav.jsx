@@ -42,7 +42,7 @@ const HeroNav = () => {
                                 </button>
                             </div>
 
-                            <button onClick={() => setIsCartOpen(!isCartOpen)}>
+                            <button className='cursor-pointer' onClick={() => setIsCartOpen(!isCartOpen)}>
                                 <i className="fa-solid fa-bag-shopping"></i>
                             </button>
                         </div>

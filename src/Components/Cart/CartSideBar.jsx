@@ -23,7 +23,7 @@ const CartSideBar = ({ onClose }) => {
 
           <div className="flex justify-between items-center">
             <span className="text-xl font-semibold">cart</span>
-            <button onClick={onClose}><i className="fa-solid fa-xmark text-3xl text-black"></i></button>
+            <button className='cursor-pointer' onClick={onClose}><i className="fa-solid fa-xmark text-3xl text-black"></i></button>
           </div>
 
           <div className="flex-1 overflow-y-auto mb-40">
