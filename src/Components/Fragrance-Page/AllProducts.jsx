@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
-import Product from '../Cosmetics-Page/Product'
-import { Link } from 'react-router-dom'
+import Product from './Product'
 import main9 from '../../assets/pd9.webp'
 import hov9 from '../../assets/pd9h.webp'
 import main10 from '../../assets/pd10.webp'
@@ -99,14 +97,18 @@ const AllProducts = () => {
   return (
     <>
       <div className='grid grid-cols-4 gap-15 m-6'>
-        {productsDetails.map((prod, index) => (
-          <Link to={`/fragrance/${prod.id}`} key={prod.id} >
-            <Product  {...prod} />
-          </Link>
+        {productsDetails.map((prod) => (
+          <Product key={prod.id} {...prod} />
         ))}
       </div>
     </>
   )
+
+
+
+
+
+
 
 }
 
