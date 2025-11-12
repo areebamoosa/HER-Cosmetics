@@ -19,10 +19,10 @@ const Product = ({ id, title, price, desc, Img, hoverImg, smallImgs }) => {
     return (
 
         <div
-            className="relative h-[560px] w-[420px] bg-white rounded-lg transition-all duration-500 group shadow-md cursor-pointer"
+            className="relative h-[560px] w-[400px]  bg-white rounded-lg transition-all duration-500 group shadow-md cursor-pointer"
             onClick={handleCardClick}
         >
-            <div className="relative h-[400px] w-[420px] rounded-t-lg ">
+            <div className="relative h-[400px] w-[400px] rounded-t-lg ">
                 {/* Original Default Image */}
                 <img
                     src={mainImg}

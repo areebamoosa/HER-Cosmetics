@@ -56,7 +56,7 @@ const Page = () => {
                 </select>
             </div>
 
-            <div className='m-10'>
+            <div className='m-6'>
                 <AllProducts />
             </div>
 

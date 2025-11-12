@@ -24,7 +24,7 @@ const Page = () => {
                     </select>
                 </div>
 
-                <div className='m-10 mb-[100px]'>
+                <div className='m-6 mb-[100px]'>
                     <AllProducts />
                 </div>
 

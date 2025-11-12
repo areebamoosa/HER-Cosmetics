@@ -10,9 +10,9 @@ const SecFeat = () => {
 
     return (
         <>
-            <div className='m-20'>
+            <div className='m-6'>
                 <div className=' flex flex-col justify-center items-center mt-10'>
-                    <div className='grid grid-cols-4 gap-8'>
+                    <div className='grid grid-cols-4 gap-4'>
                         {secFeatured.map((prod) => (
                             <Product key={prod.id} {...prod} />
                         ))}

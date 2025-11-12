@@ -160,7 +160,7 @@ const AllProducts = () => {
 
   return (
     <>
-      <div className='grid grid-cols-4 gap-15 m-6'>
+      <div className='grid grid-cols-4 gap-4'>
         {productsDetails.map((prod) => (
           <Product key={prod.id} {...prod} />
         ))}

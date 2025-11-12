@@ -24,9 +24,9 @@ const Product = ({ id, title, price, desc, Img, hoverImg, smallImgs }) => {
         <>
             {/* Design Card of each Product */}
 
-            <div className='relative h-[560px] w-[420px] bg-white rounded-lg transition-all duration-500  group shadow-md' onClick={handleCardClick}>
+            <div className='relative h-[560px] w-[400px] bg-white rounded-lg transition-all duration-500  group shadow-md' onClick={handleCardClick}>
 
-                <div className='relative h-[400px] w-[420px] rounded-t-lg '>
+                <div className='relative h-[400px] w-[400px] rounded-t-lg '>
 
                     {/* Original Default Image */}
                     <img src={mainImg} alt="prod" className='absolute h-full w-full object-cover rounded-t-lg transition-opacity duration-200 hover:opacity-0' />

@@ -4,6 +4,9 @@ body {
   background-color: #f8f1f4;
   overflow-x: hidden;
 }
+html{
+  overflow-x: hidden;
+}
 
 /* Custom Font Styles */
 .font {
