@@ -32,20 +32,20 @@ const Page = () => {
 
                 <div className='mt-[120px] flex flex-col justify-center items-center '>
                     <div className='text-white  flex flex-col gap-3 font'>
-                        <h1 className='text-xl font-normal'>sign up for updates:</h1>
+                        <h1 className='text-sm sm:text-lg lg:text-xl font-normal'>sign up for updates:</h1>
                         <div className='flex justify-center items-center gap-6'>
-                            <input type="text" placeholder='email address' className='w-150 h-10 border p-4 rounded-sm border-white' />
-                            <button className={`bg-transparent font border border-white  w-40 h-10  font-light  px-5 py-2 rounded-md  cursor-pointer hover:bg-black hover:text-white`}>submit</button>
+                            <input type="text" placeholder='email address' className='w-60 sm:w-110 lg:w-150 h-10 border p-4 rounded-sm border-white' />
+                            <button className={`bg-transparent font border border-white  w-30 md:w-30  lg:w-40 h-10  font-light  px-5 py-2 rounded-md  cursor-pointer hover:bg-black hover:text-white`}>submit</button>
 
                         </div>
 
-                        <div className='flex gap-1'>
+                        <div className='flex gap-1 text-sm sm:text-lg'>
                             <p className='text-white'>by signing up you agree to our</p>
                             <p className='text- underline cursor-pointer'>terms</p>
                         </div>
                     </div>
 
-                    <div className='text-3xl flex gap-10 mt-20 cursor-pointer'>
+                    <div className='text-2xl sm:text-3xl flex gap-10 mt-20 cursor-pointer'>
 
                         <i className="fa-brands fa-facebook-f" style={{ color: "#ffffff" }}></i>
                         <i class="fa-brands fa-instagram" style={{ color: "#ffffff" }}></i>
@@ -54,7 +54,7 @@ const Page = () => {
 
                     </div>
 
-                    <div className='flex gap-5 mt-20 text-lg text-white font'>
+                    <div className='flex text-white font     gap-3 whitespace-nowrap  sm:gap-5 mt-10 sm:mt-20 text-xs sm:text-lg'>
                         <p className='hover:underline cursor-pointer'>contact us</p>
                         <p className='hover:underline cursor-pointer'>faq</p>
                         <p className='hover:underline cursor-pointer'>shipping</p>
@@ -63,7 +63,7 @@ const Page = () => {
                         <p className='hover:underline cursor-pointer'>gift card balance</p>
                     </div>
 
-                    <div className='flex gap-4 mt-15 text-base text-white'>
+                    <div className='flex  text-white   gap-2 sm:gap-4 mt-10 sm:mt-15 text-xs sm:text-base whitespace-nowrap'>
                         <p className='underline cursor-pointer'>privacy policy</p>
                         <p className='underline cursor-pointer'>terms</p>
                         <p className='underline cursor-pointer'>accessibility</p>
@@ -72,7 +72,7 @@ const Page = () => {
                     </div>
 
                     <div className='mt-8 mb-10'>
-                        <p className='text-white font-medium font text-lg'>Developed with <i className="fa-regular fa-heart " style={{ color: "#ffffff" }}></i> by A.M</p>
+                        <p className='text-white font-medium font text-sm sm:text-base lg:text-lg'>Developed with <i className="fa-regular fa-heart " style={{ color: "#ffffff" }}></i> by A.M</p>
                     </div>
                 </div>
             </div>
