@@ -14,40 +14,44 @@ const Page = () => {
         <>
             <NavSwitcher />
 
-            <div className='relative w-full h-[550px] overflow-hidden '>
-                <img src={img} alt="img" className=' w-full h-full object-cover' />
-                <div className="absolute bottom-[40px] left-[7%] -translate-x-1/5  ">
-                    <h1 className='text-3xl Font text-white font-extrabold'>HER COSMETICS</h1>
+            <div className='relative w-full h-[250px] sm:h-[550px] overflow-hidden'>
+                <img
+                    src={img}
+                    alt="img"
+                    className='w-full h-full object-cover object-right'
+                />
+                <div className="absolute sm:bottom-[40px] sm:left-[7%]  left-[3%] bottom-[20px]">
+                    <h1 className='text-sm sm:text-3xl font-extrabold text-white'>HER COSMETICS</h1>
                 </div>
             </div>
 
             {/* Small Images Row of Cosmetics Categories */}
 
-            <div className='flex gap-5 m-15 '>
-                <div className='w-[130px] h-[130px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
+            <div className='flex sm:gap-5 gap-2 justify-start items-start m-3 mt-10 sm:m-15 '>
+                <div className='sm:w-[130px] sm:h-[130px]  w-[80px] h-[80px]   rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={eyes} alt="eyes" className='w-full h-full object-cover rounded-md' />
-                    <p className='Font dark-pink font-semibold mt-2'>eyes & brows</p>
+                    <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>eyes & brows</p>
                 </div>
-                <div className='w-[130px] h-[130px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
+                <div className='sm:w-[130px] sm:h-[130px]  w-[80px] h-[80px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={best} alt="eyes" className='w-full h-full object-cover rounded-md' />
-                    <p className='Font dark-pink font-semibold mt-2'>best sellers</p>
+                    <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>best sellers</p>
                 </div>
-                <div className='w-[130px] h-[130px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
+                <div className='sm:w-[130px] sm:h-[130px]  w-[80px] h-[80px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={face} alt="eyes" className='w-full h-full object-cover rounded-md' />
-                    <p className='Font dark-pink font-semibold mt-2'>face</p>
+                    <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>face</p>
                 </div>
-                <div className='w-[130px] h-[130px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
+                <div className='sm:w-[130px] sm:h-[130px]  w-[80px] h-[80px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={feat} alt="eyes" className='w-full h-full object-cover rounded-md' />
-                    <p className='Font dark-pink font-semibold mt-2'>featured</p>
+                    <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>featured</p>
                 </div>
             </div>
 
             {/* Total Products + categorical buttons */}
 
-            <div className='flex justify-between items-center m-15'>
-                <p className='text-xl Font grey mt-5'>218 products</p>
+            <div className='flex justify-between items-center m-6 sm:m-15'>
+                <p className='text-base whitespace-nowrap sm:text-xl Font grey mt-5'>218 products</p>
 
-                <select className='border border-black px-2 py-2 rounded-md flex Font mt-5'>
+                <select className='border border-black px-1 py-1 w-[160px] sm:px-2 sm:py-2 rounded-md flex Font mt-5'>
                     <option>Sort by: Featured </option>
                     <option>Sort by: newest</option>
                     <option>Sort by: best selling </option>
@@ -56,7 +60,7 @@ const Page = () => {
                 </select>
             </div>
 
-            <div className='m-6'>
+            <div className='m-2  lg:m-6'>
                 <AllProducts />
             </div>
 
