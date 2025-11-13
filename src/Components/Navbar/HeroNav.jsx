@@ -4,11 +4,13 @@ import Nav from './Nav'
 import CartSideBar from '../Cart/CartSideBar';
 import Search from '../ProductSearch/Search';
 import { useSearch } from '../ProductSearch/SearchContext';
+import SideBar from './SideBar';
 
 const HeroNav = () => {
     const [open, setOpen] = useState(false);
     const [isCartOpen, setIsCartOpen] = useState(false);
     const { searchItem, setSearchItem } = useSearch();
+    const [sidebar, setSidebar] = useState(false);
 
     const inputRef = useRef(null);
 
@@ -23,18 +25,22 @@ const HeroNav = () => {
             <div className="absolute top-0 left-0 w-full z-10 ">
                 <div className="fixed top-0 left-0 w-full z-50 p-2">
                     <div className='text-white flex justify-between items-center mt-12 text-2xl '>
-                        <div className='text-white flex justify-center items-center gap-2 ml-10'>
+                        <div className='text-white hidden sm:flex justify-center items-center gap-2 sm:ml-6 lg:ml-10'>
                             <p className='font'>us</p>
                             <i className="fa-solid fa-dollar-sign"></i>
                         </div>
 
-                        <h1 className='headFont text-3xl ml-50 cursor-pointer '>
+                        <button onClick={() => setSidebar(true)} className='ml-2 sm:hidden'>
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+
+                        <h1 className='headFont whitespace-nowrap sm:text-2xl lg:text-3xl ml-10 sm:ml-25 lg:ml-50 cursor-pointer '>
                             <Link to='/'><span className="inline-block animate-door-rotate">H</span>ER COSMETICS</Link>
                         </h1>
 
-                        <div className='text-white flex justify-center items-center gap-12 text-2xl mr-10 cursor-pointer'>
-                            <p><i className="fa-solid fa-heart"></i></p>
-                            <p><Link to="/login"><i className="fa-solid fa-user"></i></Link></p>
+                        <div className='text-white flex mr-2 justify-center items-center gap-4 sm:gap-8 lg:gap-12 sm:text-lg lg:text-2xl sm:mr-4 lg:mr-10 cursor-pointer'>
+                            <p className='hidden sm:block'><i className="fa-solid fa-heart"></i></p>
+                            <p className='hidden sm:block'><Link to="/login"><i className="fa-solid fa-user"></i></Link></p>
 
                             <div className='relative'>
                                 <button onClick={() => setOpen(true)} className='cursor-pointer'>
@@ -49,7 +55,7 @@ const HeroNav = () => {
                     </div>
 
                     <div className='text-white flex justify-center items-center mt-8'>
-                        <ul className='flex justify-center items-center gap-10 font cursor-pointer'>
+                        <ul className='hidden sm:flex justify-center items-center sm:gap-1 lg:gap-10 font cursor-pointer'>
                             <li><Link to="/cosmetic" className='hover:text-black hover:rounded-md hover:bg-white transition-all duration-300 px-4 py-2'>cosmetics</Link></li>
                             <li><Link to="/fragrance" className='hover:text-black hover:rounded-md hover:bg-white transition-all duration-300 px-4 py-2'>fragrance</Link></li>
                             <li><Link to="/skin" className='hover:text-black hover:rounded-md hover:bg-white transition-all duration-300 px-4 py-2'>skin</Link></li>
@@ -92,6 +98,10 @@ const HeroNav = () => {
 
             {/* Cart Side Bar */}
             {isCartOpen && <CartSideBar onClose={() => setIsCartOpen(false)} />}
+
+            {/* Side NavBar for cellphones */}
+            {sidebar && <SideBar isOpen={sidebar} onClose={() => setSidebar(false)} />}
+
         </>
     )
 }

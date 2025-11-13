@@ -9,6 +9,8 @@ const Nav = () => {
     const [open, setOpen] = useState(false);
     const [isCartOpen, setIsCartOpen] = useState(false);
     const { searchItem, setSearchItem } = useSearch();
+    const [sidebar, setSidebar] = useState(false);
+
 
     const inputRef = useRef(null);
 
@@ -24,16 +26,21 @@ const Nav = () => {
 
                 <div className='text-white flex justify-between items-center mt-6 text-2xl '>
 
-                    <div className='text-black flex justify-center items-center gap-2 ml-10'>
+                    <div className='text-black hidden sm:flex justify-center items-center gap-2 sm:ml-6 lg:ml-10'>
                         <p className='font'>us</p>
                         <i className="fa-solid fa-dollar-sign"></i>
                     </div>
-                    <h1 className='headFont text-3xl ml-50 dark-pink cursor-pointer'><Link to='/'><span className="inline-block animate-door-rotate">H</span>ER COSMETICS </Link>
+
+                    <button onClick={() => setSidebar(true)} className='ml-2 sm:hidden'>
+                        <i class="fa-solid fa-bars text-black"></i>
+                    </button>
+
+                    <h1 className='headFont dark-pink cursor-pointer ml-10 sm:text-2xl lg:text-3xl sm:ml-25 lg:ml-50'><Link to='/'><span className="inline-block animate-door-rotate">H</span>ER COSMETICS </Link>
                     </h1>
 
-                    <div className='text-black flex justify-center items-center gap-12 text-2xl mr-10'>
-                        <p><i className="fa-solid fa-heart"></i></p>
-                        <p><Link to="/login"><i className="fa-solid fa-user"></i></Link></p>
+                    <div className='text-black flex gap-4 mr-2 justify-center items-center sm:gap-8 lg:gap-12 sm:text-lg lg:text-2xl sm:mr-4 lg:mr-10 '>
+                        <p className='hidden sm:block'><i className="fa-solid fa-heart"></i></p>
+                        <p className='hidden sm:block'><Link to="/login"><i className="fa-solid fa-user"></i></Link></p>
                         <div className='relative'>
                             <button onClick={() => setOpen(true)} className='cursor-pointer'><i className="fa-solid fa-magnifying-glass"></i>  </button>
                         </div>
@@ -43,7 +50,7 @@ const Nav = () => {
                 </div>
 
                 <div className='text-black flex justify-center items-center mt-8 mb-2'>
-                    <ul className='flex justify-center items-center gap-10 font cursor-pointer'>
+                    <ul className='hidden sm:flex justify-center items-center font cursor-pointer sm:gap-1 lg:gap-10'>
                         <li><Link to="/cosmetic" className='light-pink-hover  hover:rounded-md transition-all duration-300  px-4 py-2 '>cosmetics </Link></li>
                         <li><Link to="/fragrance" className='light-pink-hover  hover:rounded-md transition-all duration-300  px-4 py-2 '> fragrance</Link></li>
                         <li><Link to="/skin" className='light-pink-hover  hover:rounded-md transition-all duration-300  px-4 py-2 '> skin</Link></li>
@@ -84,6 +91,10 @@ const Nav = () => {
 
             {/* Cart Side Bar */}
             {isCartOpen && <CartSideBar onClose={() => setIsCartOpen(false)} />}
+
+
+            {/* Side NavBar for cellphones */}
+            {sidebar && <SideBar isOpen={sidebar} onClose={() => setSidebar(false)} />}
         </>
     )
 }
