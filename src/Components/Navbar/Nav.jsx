@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import CartSideBar from '../Cart/CartSideBar';
 import { useSearch } from '../ProductSearch/SearchContext';
 import Search from '../ProductSearch/Search';
+import SideBar from './SideBar';
+
 
 const Nav = () => {
 

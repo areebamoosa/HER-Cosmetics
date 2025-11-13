@@ -4,6 +4,8 @@ import Nav from './Nav'
 import CartSideBar from '../Cart/CartSideBar';
 import Search from '../ProductSearch/Search';
 import { useSearch } from '../ProductSearch/SearchContext';
+import SideBar from './SideBar';
+
 
 const AccountNav = () => {
 

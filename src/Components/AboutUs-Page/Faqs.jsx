@@ -53,11 +53,11 @@ const Faqs = () => {
         <>
             <Nav />
 
-            <div className="flex flex-col justify-center items-center mt-20 pt-[100px] bg-white">
-                <div>
-                    <h1 className='Font dark-pink text-4xl mt-10'>FAQ</h1>
+            <div className="flex flex-col justify-center items-center mt-4 pt-[100px] bg-white">
+                <div className="mt-[-25px] sm:mt-10">
+                    <h1 className='Font dark-pink text-2xl sm:text-3xl lg:text-4xl '>FAQ</h1>
                 </div>
-                <div className="mt-10 flex flex-col gap-8 p-8 ">
+                <div className="mt-10 flex flex-col  gap-8 p-8 ">
                     {faqs.map((faq) => (
                         <FaqCard key={faq.id} {...faq} />
                     ))}
