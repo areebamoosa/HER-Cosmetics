@@ -7,23 +7,21 @@ const Create = () => {
     return (
         <>
             <AccountNav />
-            <div className='flex flex-col justify-center items-center  mt-80 '>
+            <div className='flex flex-col justify-center items-center  mt-60 sm:mt-75 lg:mt-60 '>
 
-                <h1 className='headFont dark-pink text-3xl'>CREATE AN ACCOUNT</h1>
+                <h1 className='headFont dark-pink text-2xl sm:text-3xl'>CREATE AN ACCOUNT</h1>
 
                 <div className='flex gap-2'>
-                    <input type="text" placeholder='first name' className='w-60 h-10 bg-white grey p-6 rounded-sm mt-10 font' />
-                    <input type="text" placeholder='last name' className='w-60 h-10 bg-white grey p-6 rounded-sm mt-10 font' />
+                    <input type="text" placeholder='first name' className='w-48 sm:w-60 h-10 bg-white grey p-6 rounded-sm mt-10 font' />
+                    <input type="text" placeholder='last name' className='w-48 sm:w-60 h-10 bg-white grey p-6 rounded-sm mt-10 font' />
                 </div>
 
-                <input type="email" placeholder='email' className='w-120 h-10 bg-white grey p-6 rounded-sm mt-5 font' />
-                <input type="password" placeholder='password' className='w-120 h-10 bg-white grey p-6 rounded-sm mt-5 font' />
+                <input type="email" placeholder='email' className='w-100 sm:w-120 h-10 bg-white grey p-6 rounded-sm mt-5 font' />
+                <input type="password" placeholder='password' className='w-100 sm:w-120 h-10 bg-white grey p-6 rounded-sm mt-5 font' />
                 <div className="flex items-start text-left leading-tight mt-8 gap-2 justify-center">
 
-                    <input
-                        type="checkbox"
-                        className="  w-6 h-6 rounded-md border-2 border-black cursor-pointer " />
-                    <div className="text-sm flex gap-2">
+                    <input type="checkbox" className=" w-4 h-4 sm:w-6 sm:h-6 rounded-md border-2 border-black cursor-pointer " />
+                    <div className=" flex gap-1 text-xs sm:text-base">
                         <p className='grey'>
                             please agree to our{" "}
                             <span className="underline cursor-pointer">terms, privacy policy,</span>  to create an account
@@ -31,9 +29,9 @@ const Create = () => {
                     </div>
 
                 </div>
-                <button className='w-120 h-10  p-2 border-1 rounded-sm border-black mt-8 cursor-pointer grey'>create account</button>
-                <p className='mt-10 grey'>already have an account?</p>
-                <p className='cursor-pointer underline grey'> <Link to="/login">login</Link>   </p>
+                <button className='w-80 sm:w-120 h-10  p-2 border-1 rounded-sm border-black mt-8 cursor-pointer grey'>create account</button>
+                <p className='mt-10 grey text-sm sm:text-base'>already have an account?</p>
+                <p className='cursor-pointer underline grey text-sm sm:text-base mt-1'> <Link to="/login">login</Link>   </p>
             </div>
 
             <div className='mt-[290px]'>
