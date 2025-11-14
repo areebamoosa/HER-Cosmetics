@@ -22,27 +22,27 @@ const Page = () => {
                     alt="img"
                     className='w-full h-full object-cover object-right'
                 />
-                <div className="absolute sm:bottom-[40px] sm:left-[7%] left-[3%] bottom-[20px]">
-                    <h1 className='text-sm sm:text-3xl font-extrabold text-white'>HER'S SKIN</h1>
+                <div className="absolute sm:bottom-[40px] sm:left-[7%] left-[4%] bottom-[20px]">
+                    <h1 className='text-sm sm:text-xl font-extrabold text-white'>HER'S SKIN</h1>
                 </div>
             </div>
 
             {/* Small Images Row of Cosmetics Categories */}
 
-            <div className='flex sm:gap-5 gap-2 justify-start items-start m-3 mt-10 sm:m-15 '>
-                <div className='sm:w-[130px] sm:h-[130px]  w-[80px] h-[80px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
+            <div className='flex sm:gap-5 gap-5 justify-start items-start m-8 mt-10 sm:m-10 '>
+                <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={main9} alt="eyes" className='w-full h-full object-cover rounded-md' />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base whitespace-nowrap'>skin concerns</p>
                 </div>
-                <div className='sm:w-[130px] sm:h-[130px]  w-[80px] h-[80px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
+                <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={hov9} alt="eyes" className='w-full h-full object-cover rounded-md' />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>face</p>
                 </div>
-                <div className='sm:w-[130px] sm:h-[130px]  w-[80px] h-[80px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
+                <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={hov11} alt="eyes" className='w-full h-full object-cover rounded-md' />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>body</p>
                 </div>
-                <div className='sm:w-[130px] sm:h-[130px]  w-[80px] h-[80px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
+                <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
                     <img src={hov12} alt="eyes" className='w-full h-full object-cover rounded-md' />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>lips</p>
                 </div>
@@ -50,10 +50,10 @@ const Page = () => {
 
             {/* Total Products + categorical buttons */}
 
-            <div className='flex justify-between items-center m-6 sm:m-15'>
+            <div className='flex justify-between items-center m-6 sm:m-10 lg:m-15'>
                 <p className='text-base whitespace-nowrap sm:text-xl Font grey mt-5'>89 products</p>
 
-                <select className='border border-black px-1 py-1 w-[160px] sm:px-2 sm:py-2 rounded-md flex Font mt-5'>
+                <select className='border border-black px-1 py-1 w-[160px] sm:w-[170px] sm:px-2 sm:py-2 rounded-md flex Font mt-5'>
                     <option>Sort by: Featured </option>
                     <option>Sort by: newest</option>
                     <option>Sort by: best selling </option>

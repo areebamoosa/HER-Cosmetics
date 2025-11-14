@@ -8,14 +8,14 @@ const Page = () => {
             <div className='min-h-screen bg-black'>
                 <NavSwitcher />
 
-                <div className='pt-[200px] '>
-                    <h1 className='Font text-4xl text-white font-extrabold ml-15'>FRAGRANCE</h1>
+                <div className='pt-[130px] sm:pt-[200px] '>
+                    <h1 className='Font text-xl sm:text-3xl lg:text-4xl text-white font-extrabold ml-8 sm:ml-12 lg:ml-15'>FRAGRANCE</h1>
                 </div>
 
-                <div className='flex justify-between items-center m-6 sm:m-15'>
+                <div className='flex justify-between items-center m-6 sm:m-10 lg:m-15'>
                     <p className='text-base whitespace-nowrap sm:text-xl Font text-white mt-5'>30 products</p>
 
-                    <select className='border border-white px-1 py-1 w-[160px] sm:px-2 sm:py-2 rounded-md flex Font mt-5 text-white'>
+                    <select className='border border-white px-1 py-1 w-[160px] sm:w-[170px] sm:px-2 sm:py-2 rounded-md flex Font mt-5 text-white'>
                         <option>Sort by: Featured </option>
                         <option>Sort by: Newest</option>
                         <option>Sort by: Best selling</option>

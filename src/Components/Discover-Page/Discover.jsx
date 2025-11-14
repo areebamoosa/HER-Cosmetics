@@ -8,22 +8,20 @@ const Discover = () => {
         <>
             <Nav />
 
-            <div className=' mt-[80px] sm:mt-[100px] w-full h-[600px]  overflow-hidden '>
-
-                <div className='relative '>
-
-                    <img src={img} alt="img" className=' w-full h-full object-cover ' />
-
-                    <div className="absolute bottom-[10px]  sm:bottom-[20px] lg:bottom-[130px] left-[13%] -translate-x-1/5  ">
+            <div className='relative w-full h-[250px] mt-[80px] sm:mt-[100px] sm:h-[500px] overflow-hidden'>
+                <img
+                    src={img}
+                    alt="img"
+                    className='w-full h-full object-cover'
+                />
+                    <div className="absolute bottom-[10px]  sm:bottom-[20px] lg:bottom-[40px] left-[13%] -translate-x-1/5  ">
                         <h1 className='text-base sm:text-2xl lg:text-3xl Font text-white font-extrabold'>ABOUT THE</h1>
                         <h1 className='text-base sm:text-2xl lg:text-3xl Font text-white font-extrabold'>BRAND</h1>
                     </div>
-
-                </div>
-
             </div>
 
-            <div className='flex flex-col justify-center items-center bg-white p-10 mt-[-500px] sm:mt-[-400px] lg:mt-[-110px]'>
+
+            <div className='flex flex-col justify-center items-center bg-white p-10 mt-[-1px]  sm:mt-[-10px]'>
 
                 <div className='flex headFont text-sm sm:text-lg lg:text-2xl gap-10 dark-pink '>
                     <h1 className=' rounded-md light-pink px-2 py-2 '>COSMETICS</h1>
