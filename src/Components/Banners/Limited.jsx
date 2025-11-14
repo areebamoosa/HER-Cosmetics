@@ -12,7 +12,7 @@ const Limited = () => {
           <img src={lip} alt="lip" className='w-full h-full object-cover' />
         </div>
 
-        <div className='absolute bottom-1/3 left-1/2 -translate-x-1/2 text-white flex flex-col justify-center items-center '>
+        <div className='absolute sm:bottom-1/6 lg:bottom-1/3 left-1/2 -translate-x-1/2 text-white flex flex-col justify-center items-center '>
 
 
           <h1 className=' dark-pink font font-semibold text-3xl'>LIMITED EDITION</h1>

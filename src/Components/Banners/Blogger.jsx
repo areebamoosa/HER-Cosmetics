@@ -6,12 +6,12 @@ const Blogger = () => {
     return (
         <>
             <div className='m-5 flex justify-center items-center mt-20'>
-                <div className='flex justify-center items-center w-[1600px] h-[1000px] rounded-lg'>
-                    <div className='w-[800px] h-[1000px] overflow-hidden rounded-l-lg'>
+                <div className='flex sm:flex-col lg:flex-row justify-center items-center  sm:w-[1200px] sm:h-[1200px] lg:w-[1600px] h-[1000px] rounded-lg'>
+                    <div className='sm:w-[600px] sm:h-[600px] lg:w-[800px] lg:h-[1000px] overflow-hidden rounded-l-lg'>
                         <video src={Blog} autoPlay loop muted playsInline className='w-full h-full object-cover'></video>
                     </div>
                     <div>
-                        <div className='flex flex-col justify-center items-center bg-white w-[800px] h-[1000px] rounded-r-lg'>
+                        <div className='flex flex-col justify-center items-center bg-white sm:w-[600px] lg:w-[800px] sm:h-[600px] lg:h-[1000px] rounded-r-lg'>
                             <h1 className='font font-semibold dark-pink text-4xl'>HER'S</h1>
                             <h1 className='font font-semibold mt-8 dark-pink text-4xl '>FAVE NEW EYE KIT</h1>
                             <p className='text-xl grey mt-6'>create the perfect winter eye look</p>
