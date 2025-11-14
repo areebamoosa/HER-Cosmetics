@@ -22,7 +22,16 @@ html{
   line-height: 37.4px;
 }
 
+
+
+
 /* Custom Font Colours */
+.red{
+  color: #7F2834;
+}
+.red-bg{
+  background-color: #7F2834;
+}
 .dark-pink {
   color: #9b6d75;
 }
