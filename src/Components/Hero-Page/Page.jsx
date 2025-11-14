@@ -31,19 +31,19 @@ const Page = () => {
 
       <Category />
       <Feat />
-      <Bag />
-      <div className='mt-20'>
-        <Lipsticks />
-      </div>
-      <Blogger />
       <div className='mt-20'>
         <Cosmic />
+      </div>
+      <Bag />
+      <Blogger />
+      <div className='mt-20'>
+        <Lipsticks />
       </div>
       <SecFeat />
       <div className='mt-20'>
         <Limited />
       </div>
-      <div className='mt-60'>
+      <div className='mt-100'>
         <Footer />
       </div>
     </>
