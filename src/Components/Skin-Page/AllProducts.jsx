@@ -24,72 +24,72 @@ import hov12 from '../../assets/pd12h.webp'
 export const productsDetails = [
   {
     id: 13,
-    title: "True Brown K",
+    title: "Her's Skin Serum",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Hydrating Glow Serum",
     Img: main9,
     hoverImg: hov9,
     smallImgs: [hov9, main9]
   },
   {
     id: 14,
-    title: "True Brown K",
-    price: 36,
-    desc: "King Kylie matte lip kit",
+    title: "Her's Skin Serum",
+    price: 56,
+    desc: "Hydrating Glow Serum",
     Img: main10,
     hoverImg: hov10,
     smallImgs: [hov10, main10]
   },
   {
     id: 15,
-    title: "True Brown K",
-    price: 36,
-    desc: "King Kylie matte lip kit",
+    title: "Her's Skin Serum",
+    price: 86,
+    desc: "Hydrating Glow Serum",
     Img: main11,
     hoverImg: hov11,
     smallImgs: [main11, hov11]
   },
   {
     id: 16,
-    title: "True Brown K",
+    title: "Her's Skin Serum",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Hydrating Glow Serum",
     Img: main12,
     hoverImg: hov12,
     smallImgs: [main12, hov12]
   },
   {
     id: 17,
-    title: "True Brown K",
+    title: "Her's Skin Serum",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Hydrating Glow Serum",
     Img: main1,
     hoverImg: hov1,
     smallImgs: [hov1, main1]
   },
   {
     id: 18,
-    title: "True Brown K",
+    title: "Her's Skin Serum",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Hydrating Glow Serum",
     Img: main2,
     hoverImg: hov2,
     smallImgs: [hov2, main2]
   },
   {
     id: 19,
-    title: "True Brown K",
+    title: "Her's Skin Serum",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Hydrating Glow Serum",
     Img: main5,
     hoverImg: hov5,
     smallImgs: [s5, s6, s7, s8]
   },
   {
     id: 20,
-    title: "True Brown K",
+    title: "Her's Skin Serum",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Hydrating Glow Serum",
     Img: main4,
     hoverImg: hov4,
     smallImgs: [main4, hov4, s4]

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Product from '../Cosmetics-Page/Product'
-import { Link } from 'react-router-dom'
 import main1 from '../../assets/pd1.webp'
 import hov1 from '../../assets/pdh1.webp'
 import main2 from '../../assets/pd2.webp'
@@ -35,50 +34,52 @@ import s15 from '../../assets/pd8s-3.webp'
 
 export const productsDetails = [
   {
-    id: 1,
-    title: "True Brown K",
+    id: 0,
+    title: "Mate lip Kit",
     price: 36,
-    desc: "King Kylie matte lip kit",
-    Img: main1,
-    hoverImg: hov1,
+    desc: "Her's matte lip kit",
     category: "Cosmetics",
-    smallImgs: [hov1, main1]
-  },
-  {
-    id: 2,
-    title: "True Brown K",
-    price: 36,
-    desc: "King Kylie matte lip kit",
-    Img: main2,
-    hoverImg: hov2,
-    category: "Cosmetics",
-    smallImgs: [hov2, main2]
-  },
-  {
-    id: 3,
-    title: "True Brown K",
-    price: 36,
-    desc: "King Kylie matte lip kit",
     Img: main5,
     hoverImg: hov5,
-    category: "Cosmetics",
     smallImgs: [s5, s6, s7, s8]
   },
   {
-    id: 4,
-    title: "True Brown K",
+    id: 1,
+    title: "Mate lip Kit",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's matte lip kit",
     Img: main4,
     hoverImg: hov4,
     category: "Cosmetics",
     smallImgs: [main4, hov4, s4]
   },
   {
-    id: 5,
-    title: "True Brown K",
+    id: 2,
+    title: "Mate lip Kit",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's matte lip kit",
+    Img: main2,
+    hoverImg: hov2,
+    category: "Cosmetics",
+    smallImgs: [hov2, main2]
+
+  },
+  {
+    id: 4,
+    title: "Mate lip Kit",
+    price: 36,
+    desc: "Her's matte lip kit",
+    category: "Cosmetics",
+    Img: main1,
+    hoverImg: hov1,
+    smallImgs: [hov1, main1]
+
+  },
+  {
+    id: 5,
+    title: "Mate lip Kit",
+    price: 36,
+    desc: "Her's matte lip kit",
     Img: main3,
     hoverImg: hov3,
     category: "Cosmetics",
@@ -86,9 +87,9 @@ export const productsDetails = [
   },
   {
     id: 6,
-    title: "True Brown K",
+    title: "Mate lip Kit",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's matte lip kit",
     Img: main6,
     hoverImg: hov6,
     category: "Cosmetics",
@@ -96,9 +97,9 @@ export const productsDetails = [
   },
   {
     id: 7,
-    title: "True Brown K",
+    title: "Mate lip Kit",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's matte lip kit",
     Img: main7,
     hoverImg: hov7,
     category: "Cosmetics",
@@ -106,9 +107,9 @@ export const productsDetails = [
   },
   {
     id: 8,
-    title: "True Brown K",
+    title: "Mate lip Kit",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's matte lip kit",
     Img: main8,
     hoverImg: hov8,
     category: "Cosmetics",
@@ -116,9 +117,9 @@ export const productsDetails = [
   },
   {
     id: 9,
-    title: "True Brown K",
+    title: "Mate lip Kit",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's matte lip kit",
     Img: main1,
     hoverImg: hov1,
     category: "Cosmetics",
@@ -126,9 +127,9 @@ export const productsDetails = [
   },
   {
     id: 10,
-    title: "True Brown K",
+    title: "Mate lip Kit",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's matte lip kit",
     Img: main2,
     hoverImg: hov2,
     category: "Cosmetics",
@@ -136,9 +137,9 @@ export const productsDetails = [
   },
   {
     id: 11,
-    title: "True Brown K",
+    title: "Mate lip Kit",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's matte lip kit",
     Img: main5,
     hoverImg: hov5,
     category: "Cosmetics",
@@ -146,9 +147,9 @@ export const productsDetails = [
   },
   {
     id: 12,
-    title: "True Brown K",
+    title: "Mate lip Kit",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's matte lip kit",
     Img: main4,
     hoverImg: hov4,
     category: "Cosmetics",
@@ -169,7 +170,6 @@ const AllProducts = () => {
       </div>
     </>
   )
-
 }
 
 export default AllProducts

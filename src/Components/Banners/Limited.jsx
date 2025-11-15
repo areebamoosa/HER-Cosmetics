@@ -25,7 +25,7 @@ const Limited = () => {
         <div className='absolute sm:bottom-1/6 lg:bottom-1/3 left-1/2 -translate-x-1/2 text-white flex flex-col justify-center items-center '>
 
 
-          <h1 className=' dark-pink font font-semibold text-2xl sm:text-3xl whitespace-nowrap mt-8 sm:mt-0'>LIMITED EDITION</h1>
+          <h1 className='dark-pink font font-semibold text-2xl sm:text-2xl lg:text-3xl whitespace-nowrap mt-8 sm:mt-0'>LIMITED EDITION</h1>
           <div className='mt-8 flex flex-col  justify-center items-center sm:items-start  sm:justify-start whitespace-nowrap'>
 
             <h2 className='text-sm sm:text-lg text-black sm:text-white font '>try on lipsticks, blushes & more to</h2>
@@ -33,7 +33,7 @@ const Limited = () => {
 
           </div>
 
-          <div className='mt-6 sm:mt-8'>
+          <div className='mt-6 sm:mt-4 lg:mt-8'>
             <Button text={'shop now'} />
           </div>
         </div>

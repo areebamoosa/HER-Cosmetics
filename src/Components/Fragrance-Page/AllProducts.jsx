@@ -19,72 +19,72 @@ import hov16 from '../../assets/pd16h.webp'
 export const productsDetails = [
   {
     id: 21,
-    title: "True Brown K",
+    title: "Bloom de Perfume",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's long lasting fragrance",
     Img: main13,
     hoverImg: hov13,
     smallImgs: [main13, hov13]
   },
   {
     id: 22,
-    title: "True Brown K",
+    title: "Bloom de Perfume",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's long lasting fragrance",
     Img: main14,
     hoverImg: hov14,
     smallImgs: [main14, hov14]
   },
   {
     id: 23,
-    title: "True Brown K",
+    title: "Bloom de Perfume",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's long lasting fragrance",
     Img: main15,
     hoverImg: hov15,
     smallImgs: [main15, hov15]
   },
   {
     id: 24,
-    title: "True Brown K",
+    title: "Bloom de Perfume",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's long lasting fragrance",
     Img: main16,
     hoverImg: hov16,
     smallImgs: [main16, hov16]
   },
   {
     id: 25,
-    title: "True Brown K",
+    title: "Bloom de Perfume",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's long lasting fragrance",
     Img: main9,
     hoverImg: hov9,
     smallImgs: [hov9, main9]
   },
   {
     id: 26,
-    title: "True Brown K",
+    title: "Bloom de Perfume",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's long lasting fragrance",
     Img: main10,
     hoverImg: hov10,
     smallImgs: [hov10, main10]
   },
   {
     id: 27,
-    title: "True Brown K",
+    title: "Bloom de Perfume",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's long lasting fragrance",
     Img: main11,
     hoverImg: hov11,
     smallImgs: [main11, hov11]
   },
   {
     id: 28,
-    title: "True Brown K",
+    title: "Bloom de Perfume",
     price: 36,
-    desc: "King Kylie matte lip kit",
+    desc: "Her's long lasting fragrance",
     Img: main12,
     hoverImg: hov12,
     smallImgs: [main12, hov12]

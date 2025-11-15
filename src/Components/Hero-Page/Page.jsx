@@ -49,9 +49,13 @@ const Page = () => {
         <Category />
       </div>
 
+      <div className="block sm:hidden mt-20">
+        <Cosmic />
+      </div>
+
       <Feat />
 
-      <div className="mt-20">
+      <div className="hidden sm:block mt-20">
         <Cosmic />
       </div>
 
@@ -60,15 +64,23 @@ const Page = () => {
       <div className="mt-20">
         <Lipsticks />
       </div>
+
+      <div className='block sm:hidden'>
+        <SecFeat />
+
+      </div>
+
       <Bag />
 
-      <SecFeat />
+      <div className='hidden sm:block'>
+        <SecFeat />
+      </div>
 
       <div className="mt-20">
         <Limited />
       </div>
 
-      <div className="mt-100">
+      <div className="mt-80 lg:mt-40 sm:mt-30">
         <Footer />
       </div>
 

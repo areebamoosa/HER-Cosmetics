@@ -9,13 +9,9 @@ import Footer from '../Footer/Footer'
 import Review from '../Reviews/Review'
 import TransButton from '../Button/TransButton'
 import { useCart } from '../Cart/CartContext'
-import { useEffect } from "react";
 
 const ProductDetails = () => {
 
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }, []);
 
     const { id } = useParams();
     const { addToCart } = useCart();

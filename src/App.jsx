@@ -13,6 +13,7 @@ import SkinProductDetails from './Components/Skin-Page/ProductDetails'
 import FragProductDetails from './Components/Fragrance-Page/ProductDetails'
 import Transition from './Components/Transition/Transition'
 import CheckoutPage from './Components/Cart/CheckoutPage'
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
     <Router>
       <Transition />
+      <ScrollToTop />
       <Routes>
 
         {/* Routes of Pages */}
