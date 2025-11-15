@@ -6,7 +6,6 @@ import Search from '../ProductSearch/Search';
 import { useSearch } from '../ProductSearch/SearchContext';
 import SideBar from './SideBar';
 
-
 const AccountNav = () => {
 
     const [open, setOpen] = useState(false);
@@ -61,38 +60,39 @@ const AccountNav = () => {
             </div>
 
             {/* Search Dropdown */}
+
             {open && (
                 <div className="fixed top-0 left-0 w-full min-h-screen bg-white z-40 flex flex-col items-center overflow-y-auto pb-10">
+
                     <Nav />
 
-                    <div className='flex justify-center items-center gap-10 mt-40'>
+                    <div className="flex justify-center items-center gap-4 sm:gap-8 md:gap-10 mt-40">
                         <div className="relative">
-                            <i className="fa-solid fa-magnifying-glass font-light absolute left-4 top-1/2 -translate-y-1/2 text-xl"></i>
+                            <i className="fa-solid fa-magnifying-glass font-light absolute left-4 top-1/2 -translate-y-1/2 text-base sm:text-lg"></i>
+
                             <input
                                 ref={inputRef}
                                 type="text"
                                 value={searchItem}
                                 onChange={(e) => setSearchItem(e.target.value)}
-                                className="w-[1500px] h-[50px] border border-black rounded-md pl-12 pr-4 text-lg outline-none"
-                                placeholder="Search..."
-                            />
+                                className=" w-[220px] sm:w-[330px] md:w-[450px] lg:w-[600px] xl:w-[900px] h-[42px] border border-black rounded-md pl-10 pr-4 text-base sm:text-lg outline-none"
+                                placeholder="Search..." />
                         </div>
 
-                        <button onClick={() => setOpen(false)} className='cursor-pointer'>
-                            <i className="fa-solid fa-xmark text-3xl text-black"></i>
+                        <button onClick={() => setOpen(false)} className="cursor-pointer">
+                            <i className="fa-solid fa-xmark text-2xl sm:text-3xl text-black"></i>
                         </button>
                     </div>
+
                     <div className="w-full mt-10 px-10">
                         <Search />
                     </div>
-
                 </div>
             )}
 
             {/* Cart Side Bar */}
 
             {isCartOpen && <CartSideBar onClose={() => setIsCartOpen(false)} />}
-
 
             {/* Side NavBar for cellphones */}
             {sidebar && <SideBar isOpen={sidebar} onClose={() => setSidebar(false)} />}

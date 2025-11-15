@@ -22,7 +22,7 @@ const Page = () => {
       <div>
         <div className="relative  h-[650px] sm:h-[600px] md:h-[1000px] lg:h-screen w-full">
           <img src={main} alt="hero" className="w-full h-full object-cover object-[78%_20%] sm:object-[80%_20%]" />
-          <div className=" red sm:!text-white md:!text-white lg:!text-white absolute mt-4 sm:mt-0  translate-x-1/5  sm:bottom-[50px] sm:translate-x-1/5 lg:bottom-[120px] lg:left-[23%] lg:-translate-x-1/5">
+          <div className=" red sm:!text-white md:!text-white lg:!text-white absolute mt-4 sm:mt-0  translate-x-1/5  sm:bottom-[50px] sm:translate-x-1/5 lg:bottom-[150px] lg:left-[23%] lg:-translate-x-1/5">
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="h-[2px] w-20 red-bg sm:!bg-white"></div>
               <p className="tracking-widest red text-base lg:text-4xl font-semibold sm:!text-white">
@@ -55,12 +55,12 @@ const Page = () => {
         <Cosmic />
       </div>
 
-      <Bag />
       <Blogger />
 
       <div className="mt-20">
         <Lipsticks />
       </div>
+      <Bag />
 
       <SecFeat />
 
