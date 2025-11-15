@@ -7,7 +7,7 @@ const Review = () => {
         <>
             <section className='light-pink'>
                 <div className='flex justify-center items-center flex-col p-10 gap-5'>
-                    <h1 className='headFont dark-pink text-3xl'>REVIEWS</h1>
+                    <h1 className='headFont dark-pink text-xl sm:text-2xl lg:text-3xl'>REVIEWS</h1>
                     <div className='flex mt-2 gap-1'>
                         <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
                         <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
@@ -21,7 +21,8 @@ const Review = () => {
                         <TransButton text={"write a review"} width="w-[150px]" />
                     </div>
                     <div>
-                        <div className='w-[1000px]'>
+                        <div className="w-full max-w-[1000px]">
+
                             <div className='flex  gap-1 text-xs'>
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
@@ -29,7 +30,7 @@ const Review = () => {
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
                             </div>
-                            <p className=' dark-pink font-semibold mt-1 text-xl '><i>Sweet Yummy Scent</i></p>
+                            <p className=' dark-pink font-semibold mt-1 text-base sm:text-xl '><i>Sweet Yummy Scent</i></p>
                             <p className='grey mt-1'>Fell in love with the scent, feels amazingly fresh</p>
                             <p className='grey mt-3'>10/20/2025</p>
                             <div className='grey flex gap-2 font '>
@@ -49,7 +50,8 @@ const Review = () => {
                             </div>
                         </div>
                         <hr className='dark-pink mt-6' />
-                        <div className='w-[1000px] '>
+                        <div className="w-full max-w-[1000px]">
+
                             <div className='flex mt-5 gap-1 text-xs '>
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
@@ -57,7 +59,7 @@ const Review = () => {
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
                             </div>
-                            <p className=' dark-pink font-semibold mt-1 text-xl '><i>Very nice smell. I would buy for girlfriend</i></p>
+                            <p className=' dark-pink font-semibold mt-1 text-base sm:text-xl '><i>Very nice smell. I would buy for girlfriend</i></p>
                             <p className='grey mt-1'>This smell was very nice. Lasted a good amount through the day. Not too sweet or sickening. Would recommend and buy again</p>
                             <p className='grey mt-3'>10/20/2025</p>
                             <div className='grey flex gap-2 font '>
@@ -77,7 +79,8 @@ const Review = () => {
                             </div>
                         </div>
                         <hr className='dark-pink mt-6' />
-                        <div className='w-[1000px] '>
+                        <div className="w-full max-w-[1000px]">
+
                             <div className='flex mt-5 gap-1 text-xs'>
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
@@ -85,7 +88,7 @@ const Review = () => {
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
                                 <p style={{ color: "#9b6d75", }}><i class="fa-solid fa-star"></i> </p>
                             </div>
-                            <p className=' dark-pink font-semibold mt-1 text-xl '><i>Nice scent</i></p>
+                            <p className=' dark-pink font-semibold mt-1 text-base sm:text-xl '><i>Nice scent</i></p>
                             <p className='grey mt-1'>I love the scent, it smells so good and lasts all day, love it!</p>
                             <p className='grey mt-3'>10/20/2025</p>
                             <div className='grey flex gap-2 font '>

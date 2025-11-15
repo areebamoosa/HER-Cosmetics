@@ -2,21 +2,26 @@ import React from 'react'
 import Nav from '../Navbar/Nav'
 import { productsDetails } from './AllProducts'
 import { useParams } from 'react-router-dom'
-import TransButton from '../Button/TransButton'
 import vegan from '../../assets/vegan.webp'
 import cruel from '../../assets/cruelty.webp'
 import { useState } from 'react'
 import Footer from '../Footer/Footer'
 import Review from '../Reviews/Review'
-import {useCart} from '../Cart/CartContext'
+import TransButton from '../Button/TransButton'
+import { useCart } from '../Cart/CartContext'
+import { useEffect } from "react";
 
 const ProductDetails = () => {
-    
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
+
     const { id } = useParams();
     const { addToCart } = useCart();
 
     const product = productsDetails.find((p) => p.id === Number(id));
-    
+
     if (!product) {
         return <div className="text-center mt-10 text-xl">Product not found </div>;
     }
@@ -29,18 +34,18 @@ const ProductDetails = () => {
         <>
             <Nav />
 
-            <div className='flex justify-center items-center w-[2000px] h-[1000px] gap-20 pt-[150px] '>
+            <div className="flex flex-col lg:flex-row justify-center items-center  max-w-[1400px] w-full mx-auto h-auto lg:h-[800px] gap-3 sm:gap-10 pt-[100px] sm:pt-[130px] lg:pt-[250px] px-4">
 
-                <div className='relative w-[700px] h-[800px] rounded-xl'>
+                <div className="relative w-full sm:w-[500px] lg:w-[650px] h-[420px] sm:h-[600px] lg:h-[800px] rounded-xl">
+
                     <img src={mainImg} alt="prod" className='absolute h-full w-full object-cover rounded-t-lg transition-opacity duration-200 hover:opacity-0' />
-                    <img src={hoverImg} alt="hovImg" className="absolute top-0 left-0 h-full w-full object-cover rounded-t-lg opacity-0 transition-opacity duration-200 hover:opacity-100 " />
+                    <img src={hoverImg} alt="hovImg" className="absolute top--0 left-0 h-full w-full object-cover rounded-t-lg opacity-0 transition-opacity duration-200 hover:opacity-100 " />
                 </div>
 
-                <div className='w-[700px] h-[800px] flex flex-col  text-left p-10 '>
-
+                <div className="w-full sm:w-[500px] lg:w-[650px] h-auto flex flex-col text-left p-5 sm:p-8 lg:p-10">
 
                     <div className='flex justify-between'>
-                        <p className='text-3xl  font-semibold '>{title}</p>
+                        <p className='text-2xl sm:text-3xl  font-semibold '>{title}</p>
                         <p className='font-bold text-2xl cursor-pointer'><i class="fa-regular fa-heart"></i></p>
                     </div>
                     <p className='mt-3 font grey'>7.9 fl oz | woody gourmand</p>
@@ -63,7 +68,7 @@ const ProductDetails = () => {
                     </div>
 
                     <div className='flex justify-center items-center mt-5'>
-                    <TransButton onClick={() => addToCart(product)} text={"add to cart"} width="w-[600px]" />
+                        <TransButton onClick={() => addToCart(product)} text={"add to cart"} width="w-[600px]" />
                     </div>
 
                     <div className='mt-5'>
@@ -94,7 +99,11 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>
-            <Review />
+
+            <div className='mt-6 sm:mt-4 lg:mt-50'>
+                <Review />
+            </div>
+
             <Footer />
         </>
     )
