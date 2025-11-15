@@ -4,7 +4,7 @@ body {
   background-color: #f8f1f4;
   overflow-x: hidden;
 }
-html{
+html {
   overflow-x: hidden;
 }
 
@@ -22,25 +22,15 @@ html{
   line-height: 37.4px;
 }
 
-
-
-
 /* Custom Font Colours */
-.red{
-  color: #7F2834;
-}
-.red-bg{
-  background-color: #7F2834;
+.red {
+  color: #7f2834;
 }
 .dark-pink {
   color: #9b6d75;
 }
 .grey {
   color: #3e3e3e;
-}
-
-.grey-bg{
-  background-color: #F4F4F4 ;
 }
 
 /* Custom Background Colors */
@@ -50,6 +40,12 @@ html{
 
 .light-pink {
   background-color: #f8f1f4;
+}
+.grey-bg {
+  background-color: #f4f4f4;
+}
+.red-bg {
+  background-color: #7f2834;
 }
 
 .light-pink-hover:hover {
@@ -105,4 +101,14 @@ html{
   100% {
     opacity: 0;
   }
+}
+
+/* Scroll of Featured Products for cell phones */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
 }
