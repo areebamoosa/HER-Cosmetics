@@ -18,12 +18,10 @@ const Search = () => {
   return (
     <div className=" w-full ">
       {filtered.length > 0 ? (
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {filtered.map((prod) => (
             <Link to={`/product/${prod.id}`} key={prod.id}>
-              <div className="w-[20px] h-[20px]">
-                <Product {...prod} />
-              </div>
+              <Product {...prod} />
             </Link>
           ))}
         </div>

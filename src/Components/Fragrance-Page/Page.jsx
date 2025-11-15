@@ -9,11 +9,13 @@ const Page = () => {
                 <NavSwitcher />
 
                 <div className='pt-[130px] sm:pt-[200px] '>
-                    <h1 className='Font text-xl sm:text-3xl lg:text-4xl text-white font-extrabold ml-8 sm:ml-12 lg:ml-15'>FRAGRANCE</h1>
+                    <h1 className='Font text-xl sm:text-3xl lg:text-4xl text-white font-extrabold ml-8 sm:ml-12 lg:ml-30'>FRAGRANCE</h1>
                 </div>
 
                 <div className='flex justify-between items-center m-6 sm:m-10 lg:m-15'>
-                    <p className='text-base whitespace-nowrap sm:text-xl Font text-white mt-5'>30 products</p>
+
+                    <p className='text-base whitespace-nowrap sm:text-xl Font  mt-5 sm:ml-4 lg:ml-18 text-white'>30 products</p>
+
 
                     <select className='border border-white px-1 py-1 w-[160px] sm:w-[170px] sm:px-2 sm:py-2 rounded-md flex Font mt-5 text-white'>
                         <option>Sort by: Featured </option>
@@ -24,7 +26,7 @@ const Page = () => {
                     </select>
                 </div>
 
-                <div className='m-2 sm:m-6 mb-[100px]'>
+                <div className='mb-[100px]'>
                     <AllProducts />
                 </div>
 

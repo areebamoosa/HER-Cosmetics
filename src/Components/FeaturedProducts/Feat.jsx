@@ -11,12 +11,12 @@ const Feat = () => {
     return (
         <>
             <div className='m-6'>
-                <div className='ml-6 mt-12'>
-                    <h1 className='Font dark-pink text-3xl font-bold'>SALE BEST SELLERS</h1>
+                <div className='ml-26 mt-12'>
+                    <h1 className='Font dark-pink text-2xl font-bold'>SALE BEST SELLERS</h1>
                 </div>
 
-                <div className='flex flex-col justify-center items-center mt-10'>
-                    <div className='grid grid-cols-4 gap-4'>
+                <div className='flex flex-col justify-center items-center mt-8'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                         {featured.map((prod) => (
                             <Product key={prod.id} {...prod} />
                         ))}

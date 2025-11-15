@@ -24,9 +24,9 @@ const Product = ({ id, title, price, desc, Img, hoverImg, smallImgs }) => {
         <>
             {/* Design Card of each Product */}
 
-            <div className='relative lg:h-[560px] lg:w-[400px]  h-[340px] w-[180px] sm:h-[380px] sm:w-[220px] bg-white rounded-lg transition-all duration-500  group shadow-md ' onClick={handleCardClick}>
+            <div className='relative lg:h-[460px] lg:w-[350px] sm:h-[350px] sm:w-[220px] h-[340px] w-[180px]  bg-white rounded-lg transition-all duration-500  group shadow-md ' onClick={handleCardClick}>
 
-                <div className='relative lg:h-[400px] lg:w-[400px]  h-[220px] w-full rounded-t-lg  '>
+                <div className='relative lg:h-[340px] lg:w-[350px]  h-[220px] w-full rounded-t-lg  '>
 
                     {/* Original Default Image */}
                     <img src={mainImg} alt="prod" className='absolute h-full w-full object-cover rounded-t-lg transition-opacity duration-200 hover:opacity-0' />
@@ -37,7 +37,7 @@ const Product = ({ id, title, price, desc, Img, hoverImg, smallImgs }) => {
                 </div>
 
 
-                <div className='p-2 sm:p-5 '>
+                <div className='p-2 '>
 
                     {/* Small Images row container */}
 
@@ -45,12 +45,12 @@ const Product = ({ id, title, price, desc, Img, hoverImg, smallImgs }) => {
                         {smallImgs.map((img, index) => (
                             <img src={img} alt="img" key={index}
                                 onClick={(e) => handleSmallImgClick(e, img)}
-                                className={`lg:w-[45px] lg:h-[45px] w-[35px] h-[35px] object-cover  border  ${mainImg === img ? "border-black" : "border-gray-100"}`} />
+                                className={`lg:w-[35px] lg:h-[35px] w-[35px] h-[35px] object-cover  border  ${mainImg === img ? "border-black" : "border-gray-100"}`} />
                         ))}
                     </div>
 
                     {/* Star Rating */}
-                    <div className='flex gap-1 mt-2 text-xs sm:text-sm'>
+                    <div className='flex gap-1 mt-2 text-xs '>
                         <i class="fa-solid fa-star" style={{ color: "#cccccc" }}></i>
                         <i class="fa-solid fa-star" style={{ color: "#cccccc" }}></i>
                         <i class="fa-solid fa-star" style={{ color: "#cccccc" }}></i>
@@ -67,7 +67,10 @@ const Product = ({ id, title, price, desc, Img, hoverImg, smallImgs }) => {
                             <span className='font-semibold sm:text-lg text-sm'>{price}</span>
                         </div>
                     </div>
-                    <p className='sm:text-lg text-xs grey mt-[-2px] '>{desc}</p>
+                    <p className='sm:text-sm text-xs grey mt-[-2px] '>{desc}</p>
+
+
+
                 </div>
             </div >
         </>
